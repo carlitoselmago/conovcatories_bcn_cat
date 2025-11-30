@@ -37,6 +37,11 @@ sudo apt install -y \
     libsm6 \
     libxrender1 \
     libxext6 \
+
+# Download OCR model from https://huggingface.co/nlpconnect/PubLayNet-faster_rcnn_R_50_FPN_3x/blob/d4cebcc544ac0c9899748e1023e2f3ccda8ca70e/model_final.pth?utm_source=chatgpt.com
+
+
+
 pip install -r requirements.txt
 ```
 
