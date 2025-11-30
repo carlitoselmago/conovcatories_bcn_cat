@@ -5,10 +5,11 @@ pandas
 transformers 
 torch
 pdf2image
-pillow
+pillow==9.5.0
 opencv-python
 layoutparser
 "layoutparser[ocr]"
 torch torchvision torchaudio
 openai
 tqdm
+'git+https://github.com/facebookresearch/detectron2.git@v0.4#egg=detectron2' 

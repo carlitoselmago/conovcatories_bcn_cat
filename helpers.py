@@ -1,5 +1,7 @@
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
+from pdf2image import convert_from_path
 import torch
+import os
 
 class Helpers:
 
@@ -85,7 +87,7 @@ class Helpers:
     
      
 
-    def pdf_to_images(self,pdf_path):
+    def pdf_to_images(self,images_dir,pdf_path):
         print("Checking if pages already converted…")
 
         # Check if any PNG files exist
@@ -110,10 +112,9 @@ class Helpers:
         return page_images
 
 
-    page_images = pdf_to_images(pdf_path)
 
 
-    def extract_text_from_gpt(self,messages):
+    def extract_text_from_gpt(self,client,messages):
             """Unified way to call GPT and extract only text parts."""
             response = client.chat.completions.create(
                 model="gpt-4o-mini",
@@ -130,9 +131,9 @@ class Helpers:
                 if getattr(part, "type", None) == "text"
             )
 
-    def detect_annex_id(self,b64_page):
+    def detect_annex_id(self,client,b64_page):
         """Returns ANNEX number or NONE."""
-        text = H.extract_text_from_gpt([
+        text = self.extract_text_from_gpt(client,[
             {
                 "role": "user",
                 "content": [
@@ -146,7 +147,7 @@ class Helpers:
         ])
         return text.strip()
 
-    def extract_rows_from_page(self,b64_page, columns):
+    def extract_rows_from_page(self,client,b64_page, columns):
         """Extract CSV rows using known column names. Cleans markdown artifacts."""
         prompt = f"""
             Extract all table rows from this page using these column names:
@@ -157,7 +158,7 @@ class Helpers:
             Do NOT include commentary.
             """
 
-        raw = H.extract_text_from_gpt([
+        raw = self.extract_text_from_gpt(client,[
             {
                 "role": "user",
                 "content": [
@@ -180,45 +181,45 @@ class Helpers:
 
         return "\n".join(cleaned_lines)
 
-          def extract_columns_from_page(b64_page):
-            """Extract header columns for the first page of an annex (robust)."""
-            import json
-            raw = H.extract_text_from_gpt([
-                {
-                    "role": "user",
-                    "content": [
-                        {"type": "text",
-                        "text": "Extract ONLY the column names from the table on this page. "
-                                "Return them as a JSON list of strings. No commentary."},
-                        {"type": "image_url",
-                        "image_url": {"url": f"data:image/png;base64,{b64_page}"}}
-                    ]
-                }
-            ])
+    def extract_columns_from_page(self,client,b64_page):
+        """Extract header columns for the first page of an annex (robust)."""
+        import json
+        raw = self.extract_text_from_gpt(client,[
+            {
+                "role": "user",
+                "content": [
+                    {"type": "text",
+                    "text": "Extract ONLY the column names from the table on this page. "
+                            "Return them as a JSON list of strings. No commentary."},
+                    {"type": "image_url",
+                    "image_url": {"url": f"data:image/png;base64,{b64_page}"}}
+                ]
+            }
+        ])
 
-            cleaned = raw.strip()
+        cleaned = raw.strip()
 
-            # Remove fences like ```json or ``` or ```.
-            if cleaned.startswith("```"):
-                cleaned = cleaned.strip("`")
-                # Remove language identifier if present
-                cleaned = cleaned.replace("json", "", 1).strip()
+        # Remove fences like ```json or ``` or ```.
+        if cleaned.startswith("```"):
+            cleaned = cleaned.strip("`")
+            # Remove language identifier if present
+            cleaned = cleaned.replace("json", "", 1).strip()
 
-            # Try JSON parsing
-            try:
-                cols = json.loads(cleaned)
-                if isinstance(cols, list):
-                    return cols
-            except Exception as e:
-                print("⚠ JSON parsing failed:", e)
+        # Try JSON parsing
+        try:
+            cols = json.loads(cleaned)
+            if isinstance(cols, list):
+                return cols
+        except Exception as e:
+            print("⚠ JSON parsing failed:", e)
 
-            # LAST RESORT:
-            # attempt to extract quoted strings manually
-            import re
-            matches = re.findall(r'"(.*?)"', cleaned)
-            if matches:
-                print("✓ Recovered column names by fallback:", matches)
-                return matches
+        # LAST RESORT:
+        # attempt to extract quoted strings manually
+        import re
+        matches = re.findall(r'"(.*?)"', cleaned)
+        if matches:
+            print("✓ Recovered column names by fallback:", matches)
+            return matches
 
-            print("⚠ Could not interpret column JSON, raw text:", raw)
-            return None
+        print("⚠ Could not interpret column JSON, raw text:", raw)
+        return None

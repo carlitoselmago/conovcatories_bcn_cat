@@ -40,9 +40,12 @@ sudo apt install -y \
 
 # Download OCR model from https://huggingface.co/nlpconnect/PubLayNet-faster_rcnn_R_50_FPN_3x/blob/d4cebcc544ac0c9899748e1023e2f3ccda8ca70e/model_final.pth?utm_source=chatgpt.com
 
-
+# config file : https://www.dropbox.com/s/f3b12qc4hc0yh4m/config.yml?dl=1
 
 pip install -r requirements.txt
+
+# Setup the OPENAI key with:
+export OPENAI_API_KEY={yourkey}
 ```
 
 # Comptaibilitat
