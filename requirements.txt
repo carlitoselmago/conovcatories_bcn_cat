@@ -1,2 +1,6 @@
-pdfplumber 
+py-zerox
+pymupdf4llm
+markdown-to-json
 pandas
+transformers 
+torch
