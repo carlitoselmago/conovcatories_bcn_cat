@@ -28,6 +28,15 @@ sudo apt install python3-selenium
 wget https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-linux64.tar.gz
 tar -xzf geckodriver-*.tar.gz
 sudo mv geckodriver /usr/local/bin/
+sudo apt install -y \
+    tesseract-ocr \
+    tesseract-ocr-eng \
+    poppler-utils \
+    libgl1 \
+    libglib2.0-0 \
+    libsm6 \
+    libxrender1 \
+    libxext6 \
 pip install -r requirements.txt
 ```
 

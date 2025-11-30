@@ -1,6 +1,14 @@
-py-zerox
-pymupdf4llm
+#py-zerox
+#pymupdf4llm
 markdown-to-json
 pandas
 transformers 
 torch
+pdf2image
+pillow
+opencv-python
+layoutparser
+"layoutparser[ocr]"
+torch torchvision torchaudio
+openai
+tqdm
