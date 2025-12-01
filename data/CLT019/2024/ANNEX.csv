@@ -1,0 +1,605 @@
+Nom beneficiari;Descripció acció;Tipus d'acord;Import;Partida pressupostària;Motius
+```csv
+Blasco Esparza, Mercedes;C: Sabores;Denegat;0,00 €; ;Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Nieto Cachinero, Marc;A: Estudi de la intel·ligència artificial amb una mentalitat artística i interdisciplinar;Denegat;0,00 €; ;Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Freixas Morros, Francesc;C: Homenatge. Un projecte musical fet des de la crònica i la memòria històrica.;Denegat;0,00 €; ;Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Cebrian Macias, Manel;A: Col·lecció Vortex;Denegat;0,00 €; ;Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Sola Font, Maria;A: Nacionalitat Española;Denegat;0,00 €; ;Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Pàmies Olivé, Joan Arnau;C: escalafó/piano+orquestra;Concedit;6.000,00 €;7495/D480000103441/1000;Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Vidal, Adela;A: La Impostora;Denegat;0,00 €; ;Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases generals
+Martínez Delgado, Rosa Maria;D: ESCRIURE UNA HISTORIA DE L'ART A TRAVÉS DE LA CUADRO;Denegat;0,00 €; ;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Rodilla Soriano, Eduardo;B: El llistat que va matar a Déu;Denegat;0,00 €; ;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+SIRI GIORDANO, ANDRES; TAULER D'ESCALS; Denegat; 0,00 €; ; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques.
+Meyer, Daniel J.; Projecte Greta (títol provisional); Concedit; 6.000,00 €; 7495/D4800001034411/1000; .
+Marín Arroyo, Alejandro; ; Denegat; 0,00 €; ; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques.
+Galindo Solé, Josep; TRACTAMENT EN PROCESSOS DRAMÀTURIGA DE DIRECCIÓ I LÍNIES D'ANÀLISI; Concedit; 6.000,00 €; 7495/D4800001034411/1000; .
+Mercè Sonet, Sílvia; Les cases del Poble; Denegat; 0,00 €; ; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals.
+Cort Vives, Alex; d'Ala; Denegat; 0,00 €; ; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals.
+Carrubba, Luca; O: O/VNI: Objectes videoil·luminosos no identificades; Denegat; 0,00 €; ; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals.
+MOREY GOMILA, JOAN; A: -Dispositius de la part d'epedra, marbre, fusta i metall i corn; Denegat; 0,00 €; ; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals.
+Pastor Rodríguez, Rubén; A: Fotografia; Denegat; 0,00 €; ; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals.
+rovirà, arna; A: Fotografia; Denegat; 0,00 €; ; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals.
+Guillem i Mayolas, Gerard; Disseny i fabricació d'una taula; Denegat; 0,00 €; ; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals.
+Subirà Carda, Cristian; C: Informàtica d'art rendiment; Denegat; 0,00 €; ; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals.
+Manyós Ramis, Clara; B: El senyor al cap de cada; Concedit; 60.000,00 €; 7495/D4800001034411/1000; .
+Carrasco Parodi, Julia; A: La materialitat de les curses; Denegat; 0,00 €; ; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals.
+Ribera Gibal, Maria; D: Exposició Emili Pujol; Denegat; 0,00 €; ; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals.
+Viciana Martí, Francesc; C: SOMNIS D'AIGUA - Concert poètic; Denegat; 0,00 €; ; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals.
+Muñoz Villena, Helena; D: Terra Negra; Denegat; 0,00 €; ; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals.
+Seguí Malu, Josep; B: Labor; Denegat; 0,00 €; ; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals.
+Valdés Vigil, Andrea; D: Alina Szapocznikow, en positiu; Denegat; 0,00 €; ; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals.
+```csv
+Sàbat Cots; Jordi; P: Passapass cant; 0,00 €;  ; Puntuació inferior a les mínimes exigida, d’acord amb el punt 62 de les bases especifiques
+CAPDEVILA PEÑA, MARC; A: SUITE BROSSA-PONC (un videoprojector de pintura animal); 0,00 €;  ; Puntuació inferior a les mínimes exigida, d’acord amb el punt 62 de les bases especifiques
+Maldonado Lobera, Laia; D: Documenta els cràws de William Popel; 0,00 €;  ; Puntuació inferior a les mínimes exigida, d’acord amb el punt 62 de les bases especifiques
+ortega montilla, elisa; A: Voy llegando; 0,00 €;  ; Puntuació inferior a les mínimes exigida, d’acord amb el punt 62 de les bases especifiques
+Ugas Dubrew, Liorenc; A: Col.lisions; 0,00 €;  ; Puntuació inferior a les mínimes exigida, d’acord amb el punt 62 de les bases especifiques
+Moré Gómez, Pau; E: 1848: El tren del Maresme; 600,00 €; 7495/D4800001034411/0000;
+Mosquera Sia, Laura; B: Univers Tao; 0,00 €;  ; Puntuació inferior a les mínimes exigida, d’acord amb el punt 62 de les bases especifiques
+Casanova Manonelles, Laia; D: Projecte Artís, Intervencions artístiques en fons documentals visuals; 0,00 €;  ; Puntuació inferior a les mínimes exigida, d’acord amb el punt 10.4 de les bases generals
+Deu Publil, Joaquín; A: Dissensy; 0,00 €;  ; Puntuació inferior a les mínimes exigida, d’acord amb el punt 62 de les bases especifiques
+Pujadas Baqués, Eloi; E: Investigació i creació d’un joc de taula basat en la creació de paraules en la llengua catalana; 600,00 €; 7495/D4800001034411/0000; Puntuació inferior a les mínimes exigida, d’acord amb el punt 62 de les bases especifiques
+Ferrer Fali, Bernat; B: Cordalvínica; 0,00 €;  ; Puntuació inferior a les mínimes exigida, d’acord amb el punt 10.4 de les bases generals
+Aislan Jodar, Mercé; A: Mery Marlet: A l'ull de l'aturàc; 0,00 €;  ; Puntuació inferior a les mínimes exigida, d’acord amb el punt 62 de les bases especifiques
+Jansen Avceilla, Sara; A: Relatògic i Tomba; 0,00 €;  ; Puntuació inferior a les mínimes exigida, d’acord amb el punt 62 de les bases especifiques
+Llaguna Bastante, Helena; A: Cuerpo de Texto; 0,00 €;  ; Puntuació inferior a les mínimes exigida, d’acord amb el punt 62 de les bases especifiques
+LLISTOSSELVA VIDAL, Pere; E: COLISIONADOR; 600,00 €; 7495/D4800001034411/0000; Puntuació inferior a les mínimes exigida, d’acord amb el punt 62 de les bases especifiques
+Kamp, Vaness; B: Abans de Devorar-te; 0,00 €;  ; Puntuació inferior a les mínimes exigida, d’acord amb el punt 62 de les bases especifiques
+Garreta Moreno, Anna; B: Jo cantaré; 0,00 €;  ; Puntuació inferior a les mínimes exigida, d’acord amb el punt 62 de les bases especifiques
+García Espada, Clara; B: La llei del desig; 0,00 €;  ; Puntuació inferior a les mínimes exigida, d’acord amb el punt 62 de les bases especifiques
+Cavalcante Machado Junor, Claudionor; B: Desertificació; 0,00 €;  ; Puntuació inferior a les mínimes exigida, d’acord amb el punt 62 de les bases especifiques
+Giménez Rodríguez; Pablo; Ex arts; 6.000,00 €; 7495 D4800001034411/0000;
+Jacarilla Jordó; Marcela; "De la guerra (Notes al pel per al moment present)"; 0,00 €; ; Denegat
+Guarro i Nogues; Raimon; "A: Intel·ligència Artificial: entre el conflicte i la potencial"; 0,00 €; ; Denegat
+Gaztitu Chames; Javier; B: "Yo quería morir por el cráter de un volcán cuando estuve a punto de estallar"; 0,00 €; ; Denegat
+FAND MORELL, ANNA; E: DIME, joc de cartes; 0,00 €; ; Denegat
+Gákuez Pérez; Ricard; B: "Exploració escènica (teatre-dansa, escena híbrida)"; 0,00 €; ; Denegat
+Sucari Jabbaz; Jacobo; D: Cròniques del Món Chung; 0,00 €; ; Denegat
+Göll Vallbona; Martí; B: L'Últim Ballarí; 0,00 €; ; Denegat
+Petit Bozzo; Teresa; D: Màquina del Producció Escènica; 6.000,00 €; 7495 D4800001034411/0000;
+Baulies Perez; Claudia; C: photoSYNTHESIS; 6.000,00 €; 7495 D4800001034411/0000;
+Baltà Vila; Pau; "En un pint pam - integrat a la cultura i tradicions catalanes en el desenvolupament del"; 6.000,00 €; 7495 D4800001034411/0000;
+Faxesad Brujats; Maria Luisa; D: Significats simbòlics en la pintura de Fina Miralles; 0,00 €; ; Denegat
+Carbonell Garcia; Maria; B: "Recerca per al projecte ""Superpissió"""; 0,00 €; ; Denegat
+BAGES RUBI, JOAN; C: GWI701871 (composició electroacústica); 6.000,00 €; 7495 D4800001034411/0000;
+Nogües Otero; Alejandro; "Estira la corda"; 0,00 €; ; Denegat
+Trepat Rubirola; Ona; A: Cosmogonia del text; 0,00 €; ; Denegat
+Aucejo Molla; Maria; A: Road trip FAP-7; 0,00 €; ; Denegat
+blasco gallardo; jorge; D: ARXIVAR EN QUATRO TIEMPOS, comunitats minorizades.; 0,00 €; ; Denegat
+Acarin Welland; Xavier; D: Residència i investigació Poteboun; 6.000,00 €; 7495 D4800001034411/0000;
+Chandler Pardo, Dylan;Dylan Chandler's Light Experiment;Denegat;0,00 €;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Giros Menéndez, Julia;A Too Much To Wash;Denegat;0,00 €;Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Martínez Sanguino, Alejandro;Recorca i creació d'un joc de taula sobre la mitologia catalana (bestiar festiu i llegendes);Denegat;0,00 €;Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Gómez Villar, Antonio;Imaginarios en la era del Antropoceno. Ecología y prácticas artísticas;Denegat;0,00 €;Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Millán Almenar, Alberto;Quiz Castle. El asedio de las preguntas;Denegat;0,00 €;Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Shihab, Dania Khalil;El tercer espai;Denegat;0,00 €;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Martínez Cugot, David;3D Music Lab;Concedit;600,00 €;7495 D/480000103/4411/0000
+Soto Calderón, Andrea Lorena;Pensar a través de les imatges;Denegat;0,00 €;Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Rincón Martínez, Mónica;EL EMTANT M'OVIMENT (instituts);Denegat;0,00 €;Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Campo Corral, Nerea;El temps subterran és força coercitiva. Contramemoràtiques i coropolitonía en la literatura i l'art;Denegat;0,00 €;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Visa Carreras, Irene;A quo balla rest;Concedit;600,00 €;7495 D/480000103/4411/0000
+Conde Peidro, Jorge;THE BEACHLESS TOWN ARCHIVE;Concedit;600,00 €;7495 D/480000103/4411/0000
+D'Argenvio Cavaleiro, Stefano;Identitat fragmentada;Denegat;0,00 €;Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Galinó Guarin, Juan David;Anestesia General;Concedit;600,00 €;7495 D/480000103/4411/0000
+Ricart Masip, Marta;Revers. Tractes per a l'acció creativa a les Valls d'Anèu;Concedit;600,00 €;7495 D/480000103/4411/0000
+Waksman, Andrés;ETERNA;Concedit;600,00 €;7495 D/480000103/4411/0000
+Ristol Oriols, Xavier;GRIS POL;Denegat;0,00 €;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Olivé Olieto, Mar;Melic - Teixint Memòries;Concedit;600,00 €;7495 D/480000103/4411/0000
+Benavent, Pedro;(D)E(T)OUR DE FORCE;Concedit;600,00 €;7495 D/480000103/4411/0000
+Nicolet, François-Xavier; C: Ubi Sunt; Denegat; 0,00 €; 7495 D/480000103/4411/0000; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Ruests, Francesc; C: Creació de banda sonora per a instal·lació "Sick sculptures"; Denegat; 0,00 €; 7495 D/480000103/4411/0000; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+roimeser xirgo, meritxell; A: COTS, ENERGIA I VISIÓ: arquitectura energètica del cos, en com un dispositiu perceptiu i la dimen; Concedit; 6,000.00 €; 7495 D/480000103/4411/0000; .
+Valldosera Guilla, Eulàlia; A: B: CA-TURNE; col·lectiu de ports en monocicle; Denegat; 0,00 €; 7495 D/480000103/4411/0000; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Lidon Baulíez, Alex; A: B: CA-TURNE; col·lectiu de ports en monocicle; Denegat; 0,00 €; 7495 D/480000103/4411/0000; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Morales Galiana, Francesc; E: Creant música, client llit; Denegat; 0,00 €; 7495 D/480000103/4411/0000; .
+Riera Robuste, Joan; C: Composició musical pel Trio Skewers; Concedit; 6,000.00 €; 7495 D/480000103/4411/0000; .
+Minguell Maria, Teresa; A: sons per la fi del món; Concedit; 6,000.00 €; 7495 D/480000103/4411/0000; .
+Mercader Fulguet, Carles; A: CUITAT MAMÀ.>> EXCENTRICITAT: Narratives excèctriques de la Barcelona contemporània; Denegat; 0,00 €; 7495 D/480000103/4411/0000; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Alcover Pujol, Yago; A: GEO-LÒGIQUES; Denegat; 0,00 €; 7495 D/480000103/4411/0000; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Cayuela Gonzalez, Anna; A: TID: Ecosistemes líquids; Denegat; 0,00 €; 7495 D/480000103/4411/0000; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+erra canaldel, marta; B: La caiguda dels greus; Denegat; 0,00 €; 7495 D/480000103/4411/0000; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+ARAN FLORES, MARTA; B: El dag: l'art escènica oblidada; Denegat; 6,000.00 €; 7495 D/480000103/4411/0000; .
+ROMERO RAMIREZ, OSCAR; E: NEO: EL TRESOR PERDUT; Concedit; 6,000.00 €; 7495 D/480000103/4411/0000; .
+Castaño Ferrete, Eugenio; E: Francesca Bonomenisa. La primera Biblioteca Popular de la Dona; Concedit; 6,000.00 €; 7495 D/480000103/4411/0000; .
+Guzmán Conde, Julia Aurora; A: Optar per Equilibri; Denegat; 0,00 €; 7495 D/480000103/4411/0000; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Gonzalez Tol, Salvador; E: El gran joc de les bruixes catalanes (Títol provisional); Denegat; 0,00 €; 7495 D/480000103/4411/0000; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Fusté Rodríguez, Ferran; E: Gimnac a Girona; Denegat; 0,00 €; 7495 D/480000103/4411/0000; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Rodrigo Gutierrez, Marc; B: L'emboscadura; Denegat; 6,000.00 €; 7495 D/480000103/4411/0000; .
+Lucas Sánchez;D: Disseny i desenvolupament d'un joc de taula de mecànica innovadora i temàtica cultural;Denegat;0,00 €;7495 D4800001034411/0000;Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Muñoz Melo, Tatiana;A: Investigació en Sistemes de combustió amb llenya: integrant tradició, sostenibilitat, sobrament;Concedit;6.000,00 €;7495 D4800001034411/0000;-
+Trigo Jimenez, Ricardo;A: All Input All Output;Concedit;0,00 €;7495 D4800001034411/0000;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Moncunill Plahs, Mariona;A: No vagis a buscar els infants a l'escola;Concedit;6.000,00 €;7495 D4800001034411/0000;Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Porfiño, Enrico;B: EYT-City: construeix la teva ciutat turística;Denegat;0,00 €;7495 D4800001034411/0000;Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Reixach Martinez, Anna;B: GUIÓ ESCÈNIC;Denegat;0,00 €;7495 D4800001034411/0000;Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Boteju Llounguers, Sergio;A: El Si i la violència;Concedit;6.000,00 €;7495 D4800001034411/0000;-
+Girónes López, Albert;A: Dispositiu espectre de Brocken;Denegat;6.000,00 €;7495 D4800001034411/0000;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Balaguer Montón, Carmina;D: L'amor des de la perspectiva indígena;Denegat;0,00 €;7495 D4800001034411/0000;Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Santacana Vall, Jòlia;B: Procés d'investigació per a la recreació d'el darrer soviet;Denegat;0,00 €;7495 D4800001034411/0000;Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Florens Ros, Irma;D: Al o'Aw-wy?: ajuda en el sector teatral?;Denegat;0,00 €;7495 D4800001034411/0000;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Adan, Marc;B: La Casa de Comèdies de Barcelona VR;Denegat;0,00 €;7495 D4800001034411/0000;Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Solà Carbonell, Nina;B: Jove;Concedit;6.000,00 €;7495 D4800001034411/0000;-
+Sousa Blanch, Agustí;A: Testimonis del·lèctius: pintura i àlbum familiar;Denegat;0,00 €;7495 D4800001034411/0000;Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Bmic Monsegur, Constanza;B: Pràctiques laterals, coses que envolten un buit;Concedit;6.000,00 €;7495 D4800001034411/0000;-
+Polo Bosch, Gemma;B: Morir i ho facin tot el món;Denegat;6.000,00 €;7495 D4800001034411/0000;-
+Lucas Feliu, Marti;E: Criminel;Concedit;6.000,00 €;7495 D4800001034411/0000;Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+COMA FABREGA, ALBERT;A: UN MÓN DE PASSATGES;Denegat;0,00 €;7495 D4800001034411/0000;Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Morrenos Calzada, Adrià;E: Cercabesties;Denegat;0,00 €;7495 D4800001034411/0000;-
+Santamaria Varas, Mar; Barcelona de nit; Concedit; 6.000,00 €; 7495 D/480000103/4411/0000;
+Jordana Fàbregas, Josep M.; TRES. Una exploració del silenci; Denegat; 0,00 €;
+Lizarazu Gonzalez, Haize; Sci Poll Parc; Concedit; 6.000,00 €; 7495 D/480000103/4411/0000;
+Vitalit, Martin; Proyecto colaborador: Peque Libero - Martin Vitalit; Denegat; 0,00 €;
+Avals Marques, Imma; Memoire of Echo; Denegat; 0,00 €;
+Ferrers Gonzalez-sols, Lluís; El gran format dels anys 20; Concedit; 6.000,00 €; 7495 D/480000103/4411/0000;
+Vázquez Martín, Ariadna; A: Soles i sabates modulers en impressió 3D; Denegat; 0,00 €;
+Pereira Enriquez, Manuela; Estirar la llengua. Estrategies Subversives desde el Davad; Denegat; 0,00 €;
+Momblant Ribes, Marta; D: Treball de recerca/col·laboració per un Tractat de Dramaturgia en l'ensenyament innovador des del pensament en femení; Denegat; 0,00 €;
+Roca Taruella, Elina; Estuve en 'y' me acordé de ti; Denegat; 0,00 €;
+FONTANET BASSAS, ANNA; LA NIT ABANS DEL BOSCOS; Denegat; 0,00 €;
+Camilo Gomes, Renan; De tocar la ield d'un quan la ield món ens toca; Denegat; 0,00 €;
+Lorento Floriano, Ana; A: Les flors de la abuela; Denegat; 0,00 €;
+Castellà Fabregat, Anna; Ecosistemes públics; Denegat; 0,00 €;
+Scozzari, Cory John; De com evitarem caure: Ajudem en suport i oportunitats per artistes locals a mitat de carrera; Concedit; 6.000,00 €; 7495 D/480000103/4411/0000;
+Vilàs Romero del Castillo, Laura; Racionalitzar els processos de creació; Denegat; 0,00 €;
+Sanchez Sepulveda, Monica Vanessa; El Climatuclari; Denegat; 0,00 €;
+Caballero, Guillem C.; DRURRIT SUPERSTAR; Denegat; 0,00 €;
+Rojo, C.; Preduls (Llibre Primer); Denegat; 0,00 €;
+SANCHEZ FALCÓ, MYRIAM; C: CALIGULA; Denegat; 0,00 €; 7495/D480000103/4411/0000; Punctuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+riba santur, emma;  axió des casa meva (o de moment així o aixà); Denegat; 0,00 €; 7495/D480000103/4411/0000; Punctuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Coll i Bosch, Guillem; E: SANT JORDI: LLIDA; Concedit; 6.000,00 €; 7495/D480000103/4411/0000; Punctuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Riera Vives, Ferran; D: projecte de llibres sobre el cançoner d'edat a Barcelona; Concedit; 0,00 €; 7495/D480000103/4411/0000;
+Álvarez Riosalido, Sergi; D: swiftly arose and spread around me; Concedit; 6.000,00 €; 7495/D480000103/4411/0000; Punctuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Aso, Soledad Yamila; B: Siku; Denegat; 0,00 €;  ;
+Berenguer Alarcon, Josep Manuel; A: Invisibles i observables; Denegat; 0,00 €;  ;
+Carrasco, Aín; A: Un hambriente de la papelería continua sobre la desarrolladora clínica; Denegat; 0,00 €;  ;
+Álvarez Escandell, Carmen; D: Recurso de joya del compositor Joan Puig (1570-1626), conservada a Saragossa. Edició crítica; Denegat; 0,00 €;  ;
+Vilar García, Maria; B: REI AIRE; Denegat; 0,00 €; 7495/D480000103/4411/0000; Punctuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Martínez Sol, Andreu; E: Jose de tula amb ambientació histórica dels pescadors dels Pescaors de Llinars d'ic SX; Concedit; 6.000,00 €; 7495/D480000103/4411/0000; Punctuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Pareja Cobos, Marta; E: Els corals; Concedit; 6.000,00 €; 7495/D480000103/4411/0000; Punctuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Alcacia Freudenthal, Laura; B: ONA; Denegat; 0,00 €;  ;
+Ibarra Eilissecht, Maria Ignacia; D: Blanquejant a contraluz. El jardí floral per la jungla; Denegat; 0,00 €;  ;
+Serrano Tarrago, Alexandre; B: True Romance; Concedit; 6.000,00 €; 7495/D480000103/4411/0000; Punctuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Garcia Guisado, Maria Sara; E: DANSA DE TAULA; Denegat; 0,00 €;  ;
+Fluxà Moreno, Isaac; A: TRES; Denegat; 0,00 €;  ;
+Sardà Valls, Mercè; D: Pausa en Moviment. Sistematitzant para la transmissió de la pràctica educativa de la dansa.; Denegat; 0,00 €;  ;
+López Fontanils;DESDESTIN-NOS;Concedit;6.000,00 €;7495 D/480000103/4411/0000;
+Tranis Cordón;Nosaltres, els sense nom;Concedit;6.000,00 €;7495 D/480000103/4411/0000;
+SERNA MATA, MARIA TERESA;LA BRANCA I EL NIU;Denegat;0,00 €;7495 D/480000103/4411/0000;
+Valenzuela Chacaltana, Lucia;Imaginarios cartográficos en torno a la sequía;Denegat;0,00 €;7495 D/480000103/4411/0000;
+PRADA ELIJADEL, NATALY;D: NOVES SUJAVIDES Y ABTRACCION GÓTICA DE LOS AFECTOS;Concedit;6.000,00 €;7495 D/480000103/4411/0000;
+Taravilla Baquero, Olga;E: El viatge de la Conxita. Investigar amb el cos, escoltar l'arxiu i cantar a foreign;Denegat;0,00 €;7495 D/480000103/4411/0000;
+Pede, Nelle;El Rec de Ricard;Concedit;0,00 €;7495 D/480000103/4411/0000;
+Girones Calatayud, Lucia C. Pino;A: Tu, amb postals de somni (titol provisional);Denegat;0,00 €;7495 D/480000103/4411/0000;
+CAMPMAN MELUCH, LAIA;B: ÚNICA;Denegat;0,00 €;7495 D/480000103/4411/0000;
+Bosch Mola, Marc;B: Escorç;Denegat;0,00 €;7495 D/480000103/4411/0000;
+Gasol Selorón, Daniel;D: "HIGIENE PÚBLICA: LA SOCIETAT COM A COS MALALT";Concedit;6.000,00 €;7495 D/480000103/4411/0000;
+MIRALTA CLUSSELLAS, ELISABET;B: La tecnologia és el nou fet del domador del circ universal?;Denegat;0,00 €;7495 D/480000103/4411/0000;
+Galotea Nadal, José;C: Muntanyes Salades;Denegat;0,00 €;7495 D/480000103/4411/0000;
+SERINYÀ GOU, MAR;A: LA VEU DEL VENT;Concedit;6.000,00 €;7495 D/480000103/4411/0000;
+Urbano Pérez, Aldo;A: Còmic;Denegat;0,00 €;7495 D/480000103/4411/0000;
+Martínez Rodríguez, Pamela;A: Mitologies vegetals;Denegat;0,00 €;7495 D/480000103/4411/0000;
+Virgil, Meribelt;A: Sketching olfactory worlds;Denegat;0,00 €;7495 D/480000103/4411/0000;
+Melmann, Nicolas;C: Composició de peça electroacústica "El Report";Concedit;6.000,00 €;7495 D/480000103/4411/0000;
+Novés Alejandro, A.;A: Quan un foc no és desafiat fanòmen incendi;Concedit;6.000,00 €;7495 D/480000103/4411/0000;
+Aguilera Martin;Miriam;B: IN VACUO;6,000.00 €;7495 D480001033/4411/0000;-
+González Elías;Oriana;A: VESTIGIO;0.00 €;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals;-
+Gaya Escudé;Heura;C: silvestres pol·linitza tradicional;0.00 €;Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques;-
+Pitarch Fernández;Daniel;A: Dispersar respecte;0.00 €;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals;-
+Viamès Fanega;Carles;C: Transcol·lapse;6,000.00 €;7495 D480001033/4411/0000;-
+Belusencs Gonçalves;Andreu;D: Teixit-Financial Cosmogrophy;0.00 €;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals;-
+Diaz de Vivar;Maria Eugenia;A: De la Fusió a la Creació: Conxient i Procés dels Artistes a Vídeo dels seus Tallers;0.00 €;Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques;-
+Pons i Llaroy;Eric;B: La Por a la Pell;0.00 €;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals;-
+Noris;Marco;A: Paisatges de la renúncia;6,000.00 €;7495 D480001033/4411/0000;-
+Luarenciano;Agostina;A: "El color i la plasticitat de la vegetació;0.00 €;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals;-
+Plazuel Lamote de Grignon;Clara;A: D'aquesta carn en naixeren flors. Biomaterials per a una ecologia de la mort.;6,000.00 €;7495 D480001033/4411/0000;-
+RECÀRENS ROURA;TERE;A: PIROZ AZADI;6,000.00 €;7495 D480001033/4411/0000;-
+TARRATS SERRA;ALBERT;C: UBIQUITOUS NOISE;6,000.00 €;7495 D480001033/4411/0000;-
+Sala Maestro;Arnau;B: A COMPLETE REVOLUTION;6,000.00 €;7495 D480001033/4411/0000;-
+Martínez Cuellar;Maria;A: Deixar caure els pètals per veure el niu;0.00 €;Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques;-
+Gordo Gomez;Moises;B: Res Extensa;0.00 €;-
+ORTIZ ANTORNAZ;EUGENIA;A: COL·LECCIÓ ENFOCAT EN LA MEMÒRIA;6,000.00 €;7495 D480001033/4411/0000;-
+Coll Serrano;Carla;B: V: II;0.00 €;-
+VICENTE SALAS;IRENE;B: LA VIOLACIÓ DE LUCRECIA - DE LUCRECIA AL MITE;6,000.00 €;7495 D480001033/4411/0000;-
+Gimeno Bardis; Laia; Polinaires. Possibilitats aviniscutis queers dols del bosc; 6.000,00 €; 7495 D/480000103/4411/0000;
+Montell Hagmann; Minervino; Menys del més; 0,00 €; ;
+Balasch Arumi; Zoe; Corporatius Inclassificables; 0,00 €; ;
+Giró Ouer; Jordi; Se salen els Aliguamols; 6.000,00 €; 7495 D/480000103/4411/0000;
+CASANOVAS GÜELL; JORDI; ALLA, LLUNY; 6.000,00 €; 7495 D/480000103/4411/0000;
+Caflas Abell; Ximena; Activació de las ages; 0,00 €; ;
+García Martínez; Irene; La risa, es cosa seria; 0,00 €; ;
+Álvarez Ferré; Silvio; CONN AF (Tírol provisional); 0,00 €; ;
+Sarnom Mesa; Arnau; EXERCICIS DE CRUELTAT PER A INFANTS; 6.000,00 €; 7495 D/480000103/4411/0000;
+Santocvy Reschini; Fabía; MICROÒPERA ECOFEMINISTA; 6.000,00 €; 7495 D/480000103/4411/0000;
+ESCOLA GARCIA; NOÉ; A.L.D.N; 0,00 €; ;
+Sekimín; Urška; INTERLÚDIC; 6.000,00 €; 7495 D/480000103/4411/0000;
+Núñez Rodríguez; Sofia; APS (autodidàctic pop sobreexcitada o ambigus per sempre); 0,00 €; ;
+Bosch Bonacasa; Josep; "I les"bers, excavant el pensat"; proposta de jugar-se de termes déls bocs de taula en catàlans; 6.000,00 €; 7495 D/480000103/4411/0000;
+Boyer Ballestero; Gerard; A: Recerca fotogràfica "Una casa per viure"; 0,00 €; ;
+Rius Alay; Marta; C: L'Emenda; 0,00 €; ;
+MONTANÉS LECINA; MARC; Estética i el desenvolupament de música electrònica i audiovisuals com a atmosfera efímera; 0,00 €; ;
+Mangrand; Mercedes; A: Projecte d'arts visuals "Rics naturals"; 0,00 €; ;
+Llevat Sol; Mabel; D: Dones, hegemonia i lletres; una mirada decolonial a la cultura popular; 0,00 €; ;
+Puig Caminal; Calabruxka; Denegat; 0,00 €; -; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Ilia Casaramona; Tinc ganat; Denegat; 0,00 €; -; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+TATJE FARGAS; Laia; Cadenes i flors; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases especificades
+VELILLA FORN; Estella; A bestiar i col·legiat cianotipia; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases especificades
+Obis Farré; Jordi; E: Punts i Peces; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases especificades
+Gonzalez Vasallo; Brigitte; D: Roma a mort; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Eflman Preppichit; Martin; A: Barcelona 11:04; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases especificades
+García Paz; Lucia; B: Col·lapse; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases especificades
+Subirós Bosch; Pau; D: ESCOLTA; Concultat; 600,00 €; 7495 D/480000103/4411/0000
+Risi; Valentina; C: Valentina's Dream; Concultat; 600,00 €; 7495 D/480000103/4411/0000
+LOPEZ MUÑOZ; ANTONIO; E: HEREUS; Concultat; 600,00 €; 7495 D/480000103/4411/0000
+Crestelo Díaz; Susana; A: Natura immersiva: Exploració artística de l’ethnodòtica i la sostenibilitat; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases especificades
+BELLES GRAS; PERE; A: RUTVIC; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases especificades
+Potrony Marquez; Albert; A: MORTALS (SUPERIVENTS); Concultat; 600,00 €; 7495 D/480000103/4411/0000
+Gómez Ojeda; Salvador; A: La imatge culturalista (Proyecto artes visuales); Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Colli; Josefina; B: Sola; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases especificades
+Stecher; Andreas; C: Alpinariat; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+CERARROLS RAMÍREZ; ROSA; D: ART, CIÈNCIA COM A CAIXA D'ENVIAMENT EN TEMPS D'EMERGÈNCIA CLIMÀTICA; Concultat; 600,00 €; 7495 D/480000103/4411/0000
+Cabrera Fuster; Ortés; D: Manifest neurociencial; Concultat; 600,00 €; 7495 D/480000103/4411/0000
+Gordillo Palahí; Ferran; B: Black Box (Mary's room); 6.000,00 €; 7495 D/48000103441/1/0000; -
+TEIXIDOR COLOMER; ANNA; D: Valsika, lolita Alexandra i Elisabetta Cristina. Les dones de la frontera; 6.000,00 €; 7495 D/48000103441/1/0000; -
+Umpierre Blengio; Guillermo; A: Genealogia d'una memòria; 0,00 €; -; Denegat
+Farrés Diviu; Jordi; B: Aplicacions de la llana d'ovella fetrada en el tratge de títols i objectes; 6.000,00 €; 7495 D/48000103441/1/0000; -
+Vergès Villela; Sadurní; B: Dramaturgía de faltars; 0,00 €; -; Denegat
+POCH MASIA; CLARA; B: MELISSA; 0,00 €; -; Denegat
+Casas Griera; Oriol; C: Corts Drum&Organ, Que no serviré de precedent.; 0,00 €; -; Denegat
+Lozano Serret; Núria; B: Noms les flors; 0,00 €; -; Denegat
+Martínez Díaz; Pablo; A: BCN / Bikes / Bytes / Beats; 6.000,00 €; 7495 D/48000103441/1/0000; -
+Pascual Reyes; Eva Parey; A: Ciutat Rosa Periferia; 0,00 €; -; Denegat
+Cejudo Sánchez; David; A: Jardí en Pelà; 0,00 €; -; Denegat
+Tuiera-Pujol Bergadà; Teresa; B: Procés de recerca en hibridació de llengüetes. Projecte La Colonia moderna; 6.000,00 €; 7495 D/48000103441/1/0000; -
+Batet Lladó; Sílvia; B: ERCAS_sacré; 0,00 €; -; Denegat
+Ayguadé Farro; Lali; B: Inestable; 6.000,00 €; 7495 D/48000103441/1/0000; -
+LUENGO; JAVIER; A: Fotografia Documental i arts visuals; 0,00 €; -; Denegat
+LEGARDA ANDUEZA; NURIA; B: Todo por ti; 6.000,00 €; 7495 D/48000103441/1/0000; -
+García Font; Guillem; B: Què és rel? La percepció com a eina manipulada en les arts escèniques; 0,00 €; -; Denegat
+Reyes Sáez; Lauro; B: Waves; 0,00 €; -; Denegat
+Ferrer; Mireia; A: Lumen prim; La genista de la imatge fotogràfica; 0,00 €; -; Denegat
+Torrens, Lluís; NO ART. La falsificació dels museus; Denegat; 0,00 €;  ;
+Gefall Alsina, Guillermo; L: LAST NIGHT A DJ SAVED MY LIFE; Denegat; 0,00 €;  ;
+Mass, Elisabeth Johanna Brigitte; A: S:ci ai. Coreografies per a paisatges amb set; Denegat; 0,00 €;  ;
+Costa Vendrell, Albert; C: New Orleans Beat; Concert; 6.000,00 €; 7495 D/4800001034411/0000;
+Lega Llados, Ferran; A: Harmonies Vegetals, Inhibicions i Diàlegs Multispecials; Concert; 6.000,00 €; 7495 D/4800001034411/0000;
+Nardone, Sonia; B: Mau explica recerca sobre la maternitat actual; Denegat; 0,00 €;  ;
+Sánchez Carrasco, Oriol; A: The Only Constant is Change: Recorre envers el panorama del cinema/ vídeo experimental contemporani; Denegat; 0,00 €;  ;
+Vilaidich Ginovart, Alexander; A: Sèrie d'escriptura per contacte; Denegat; 0,00 €;  ;
+Lukas Mendonca, Henrique; D: La moderació anà no ha llegat aquí (La modernitat encara no ha arribat aquí); Denegat; 0,00 €;  ;
+Cabrer Manning, Alexandre; C: ArTmà; Denegat; 0,00 €;  ;
+Franj Herranz, Elena Gabriela; A: Mala vita; Denegat; 6.000,00 €; 7495 D/4800001034411/0000;
+VILAGUER CASANOVAS, JOQUIM; E: MIKRÓS; Denegat; 0,00 €;  ;
+Casero Nieto, Sergi; B: Don Federico y el arte de la mentira; Denegat; 6.000,00 €; 7495 D/4800001034411/0000;
+Porta Domínguez, Mónica; A: Alguna cosa a la qual dic; Una habilitat decidida; Concert; 6.000,00 €; 7495 D/4800001034411/0000;
+Steiner, Alma; E: Una bellissima giornata; Denegat; 0,00 €;  ;
+Vidal Llobet, Francesc; C: Trumanta; Denegat; 0,00 €;  ;
+MARSAL RENTER, GERARD; C: EL CAOS CONCERT I L'ALGORITM DEL CAOS (provisionals); Concert; 6.000,00 €; 7495 D/4800001034411/0000;
+herroer guiar, marc; A: ICONOGRAFIES DEL COLLAPSE; Denegat; 6.000,00 €; 7495 D/4800001034411/0000;
+ARENES VELASCO, VICTOR; E: RAIRS/RIVER DOWN; Denegat; 6.000,00 €; 7495 D/4800001034411/0000;
+de la Fuente Perez, Oscar; C: la mort d'Apo-l; Denegat; 0,00 €; -; -
+Cabezas, Felipe; B: ASSOCIACIÓ DE FIDELS DE LES ARTS ESCENIQUES; Denegat; 0,00 €; -; -
+Llodrò Orti, Rosa; D: Reconeixements; Concedit; 600,00 €; 7495/AB00010034411/0000; -
+Beltran Romeu, Iscle; D: l'efecte de la societat de masses en les representacions artístiques de casa nostra; Denegat; 0,00 €; -; -
+Peire Serrate, Lucas; C: Flutter Flow; Denegat; 0,00 €; -; -
+bassas portus, isabel; B: AAAAA (L'IL·LUSIONISME MÉS ENLLÀ DE LA DEMOCRÀCIA); Denegat; 0,00 €; -; -
+Sánchez Martínez, Sònia; E: El sol del ball, adona i tomà; Denegat; 0,00 €; -; -
+Domènech Subirans, Jordi; C: Wiegla-la cançó de Terezin; Denegat; 0,00 €; -; -
+Ruiz Salvatella, Irene; B: The Day the Music Died; Denegat; 0,00 €; -; -
+Gimeno Jaria, Carla; D: ¡Danzad, danzad, o estéis perdidos!; Denegat; 0,00 €; -; -
+Serra Lopes, Sion; E: Fake you!; Denegat; 0,00 €; -; -
+Ruiz Safont, Francesc Xavier; A: Arquitectura per golfars; Denegat; 0,00 €; -; -
+noguer guardiola, cristina; A: Materialitat-Vilanova; Denegat; 0,00 €; -; -
+D'Ascenzi, Antonella; B: Llum sota pell; Denegat; 0,00 €; -; -
+Albalat, Roc; A: La veu i la; Concedit; 600,00 €; 7495/AB00010034411/0000; -
+Alcanyis i Macias, Dolça; B: Marro a la granja; Concedit; 600,00 €; 7495/AB00010034411/0000; -
+Cerezuela Zaplana, Juan Antonio; A: Cuéntame, qué como; Denegat; 0,00 €; -; -
+Iliño Clavó, María; A: Disrupcions a les col·leccions colonials; Concedit; 600,00 €; 7495/AB00010034411/0000; -
+Olivers Tordosa, Marta; E: RE:Conexió un joc de connexió de conceptes, accions per desenvolupar la gestió cultural creativa; Denegat; 0,00 €; -; -
+Lorente Diez, Laia; Converses amb la IA: Explorar allò que ens és humà a través d'un diàleg Conceptual i Visual; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques.
+Roca Sann, Núria; De: Capitalisme cultural: Representacions, Resistències i Alternatives en la societat contemporània.; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques.
+Fernández Mercadé, Marc; B: PROJECTE ALETA - MARC FERNÁNDEZ; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals.
+Lusini Bigioli, Stefania; A: JUGAR ÉS UNA COSA SERIOSA; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques.
+Congost Nogué, Marina; B: Investigació, registre i escriptura per al projecte "Un món que s'acaba"; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques.
+Lara Martinez, Marta; A: Awkwardness happening; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques.
+THORSON, ANDREA; B: Vaus les ciències del circ?; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques.
+Lawton, Michael; A: Cor grec; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques.
+NAUDIN LORDA, MARIONA; B: COM MATAR UN HOME; Concedit; 600,00 €; 7495/D4800001034411/0000.
+Comas Comas, Oriol; D: Els jocs de taula són cultura. Els autors de jocs de taula són creadors culturals.; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques.
+LAGE FOMBUENA, ANA; A: RESISTÈNCIA VERD; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques.
+Cabrera Perez, Alejandro; A: Treballs de sol; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques.
+Sánchez Barroso, Bárbara; A: Projecte de novel·la d'autoeficàcia; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques.
+Pomer, Mercé; D: Mater amatissima; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques.
+Rumbau Masagué, Octavi; C: Som Oblíguo; Concedit; 600,00 €; 7495/D4800001034411/0000.
+Lanas Cartes, Aina; B: BECA_WAN_YANAG_DANSA; Concedit; 600,00 €; 7495/D4800001034411/0000.
+Marocup, Mélanie; E: Colors i canvans: un videojoc de mesa per petits artistes; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases específiques.
+Pascual Prieto, Miguel Ángel; A: Courbet a Tik Tok; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases específiques.
+VAN WAART GALMES; CAROLINA ANGELES; A: CUPÀGTE GRÀFIC. Investigació de la identitat de la zona vitivinícola DOQ Priorat; 0,00 €; ; Denegat
+LOVAUT, THOMAS; B: EL TERCER TEATRE; 0,00 €; ; Denegat
+Tamayo Franch, Laura; B: PER QUÈ TU MESTMIS; 0,00 €; ; Denegat
+Caballero Fonticella, Camila Paz; D: L'índex Teràpia Ocupacional Cirquera: teoria i pràctica de la Teràpia Ocupacional aplicada al cir; 0,00 €; ; Denegat
+López Vallès, Cristina; B: L'Extraordinària Olivia Olivetti; 0,00 €; ; Denegat
+Montserrat, Arnau; C: Empremtes d'Aigua: Una composició participativa; 6.000,00 €; 7495 D/480000103/4411/0000; Concedit
+Pla Roig, Sergio; B: Ovella Elèctrica; 0,00 €; ; Denegat
+Ortiz Escalona, Mª Angels; C: Cor Blanc (Album); 0,00 €; ; Denegat
+Moreno Sancho, Lara; E: Trencadis; 0,00 €; ; Denegat
+Rodríguez Cima, Ariadna; B: Ganivet, arts i pràctiques contextuals; 6.000,00 €; 7495 D/480000103/4411/0000; Concedit
+Egaña Rojas, Lucía; A: Escriptures somàtiques; 6.000,00 €; 7495 D/480000103/4411/0000; Concedit
+FLUXA GARCIES, LARA; A: Distància de vibració; 6.000,00 €; 7495 D/480000103/4411/0000; Concedit
+Guiteras Garcia, Ariadna; D: Butxaques. Apujar-se, abolir l'adultesa; 0,00 €; ; Denegat
+Ríos Maré, Núria; D: Pensament- Ressonància Creativa; 0,00 €; ; Denegat
+Campanal Alejandro, María; C: Mare Nostrum? Sumus Mare; 6.000,00 €; 7495 D/480000103/4411/0000; Concedit
+PRUNER LAAGARRIA, DIDAC; C: Escoltar la memòria; 0,00 €; ; Denegat
+de la Torre, Julia; D: XYRAX CONTINUA DE CREACIÓ INESTABLE; 0,00 €; ; Denegat
+Hernández Giral, María; B: Procés de Creació "Tres porques"; 0,00 €; ; Denegat
+Lucini Canals, Anna; E: El Pí de l'Olí Tió; 0,00 €; ; Denegat
+Garcia Ceballos; Ana; rizoma (quadern d'apunts) intel·ligència vegetal; 6.000,00 €; 7495 D/480001003/4411/0000;
+Jaenada; Victor; Traducció flamenca; 0,00 €; 7495 D/480001003/4411/0000;
+Pallé Argilés; Joan; Materials polítics i relats de futur; 6.000,00 €; 7495 D/480001003/4411/0000;
+Figueras Bagudà; Jordi; Estudi per la integració de la discapacitat visual als jocs de taula; 0,00 €; 7495 D/480001003/4411/0000;
+Benet Ramoneda; Núria; La muntanya em crida; 0,00 €; 7495 D/480001003/4411/0000;
+Cuadrado Lavado; Israel; El palatge cantà al plain air: Lluís Rigalt / Escola de Barbizon; 0,00 €; 7495 D/480001003/4411/0000;
+Ramos Contioso; Sara; Tetràmorfos; 0,00 €; 7495 D/480001003/4411/0000;
+Casas Buendía; Olivia; Recerca per la creació de noves composicions de Balkan Paradise Orchestra; 0,00 €; 7495 D/480001003/4411/0000;
+parera; adela; Estímuls experimentals; 0,00 €; 7495 D/480001003/4411/0000;
+Papasiotou; Christos; Paraules del Infern; 0,00 €; 7495 D/480001003/4411/0000;
+Olivera Tabeni; Olga; Corrals Melons, i les noves ruralitats; 0,00 €; 7495 D/480001003/4411/0000;
+Llauradó Camps; Georgina; Miss Froy - Projecte escènic; 0,00 €; 7495 D/480001003/4411/0000;
+sole coromina; laia; Escriure i llegir la intempèrie; 6.000,00 €; 7495 D/480001003/4411/0000;
+Rudolph; Tim; A l'era de la Multiplicitat: Manual de la Komor; 0,00 €; 7495 D/480001003/4411/0000;
+Costa Graval; Maria; Cançó de; 0,00 €; 7495 D/480001003/4411/0000;
+Gutiérrez Sánchez; Michael; NARCISSE; 0,00 €; 7495 D/480001003/4411/0000;
+Ubach Corpas; Lucas; Contrapuntística de la violència; 6.000,00 €; 7495 D/480001003/4411/0000;
+Soler Giner; Javier; La Cora; 6.000,00 €; 7495 D/480001003/4411/0000;
+Martín López, Nil; D' Última Merda Col·lectiu; Concèdit; 6.000,00 €; 7495 D/480000103/4411/0000; -
+Masdeu Rubies, Neus; La Festa del Llagost; Concèdit; 6.000,00 €; 7495 D/480000103/4411/0000; -
+Perramon Ramos, Job; Aflaguera negre o Black fern; Concèdit; 6.000,00 €; 7495 D/480000103/4411/0000; -
+GARCIA GUNTIN, ESTER; B: QUISO NEGRO; Concèdit; 6.000,00 €; 7495 D/480000103/4411/0000; -
+BENAVENT BODRO, IRENE; Es tiraríem el; Denegat; 0,00 €; -; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Torres López, Sara; A la casa immaterial; Concèdit; 6.000,00 €; 7495 D/480000103/4411/0000; -
+Merchant Tanbrió, Pol; Metamorfosis de la imagen oculta; Concèdit; 6.000,00 €; 7495 D/480000103/4411/0000; -
+Capellà Llaçer, Laura; A: Els colors de la inclusió digital en el procés de disseny; Denegat; 0,00 €; -; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Chaud Frazao, Rafael; A: Somnis Satisfets; Denegat; 0,00 €; -; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Cordero Crespo, Cristina; B: Auca com es que estaven els nostres peus van aconseguir albirar-se'n; Denegat; 0,00 €; -; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Renalias Zurza, Ferran; E: La batalla de Florència; Concèdit; 6.000,00 €; 7495 D/480000103/4411/0000; -
+Pravkina, Marina; B: Piano Boides; Denegat; 0,00 €; -; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Hereu Macho, Lara; E: Esbós d'una trama prima; Denegat; 0,00 €; -; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Colomnero Mir, Víctor; B: Pequeno Payasito; Denegat; 0,00 €; -; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+VELASCO SANCHEZ, JORGE; O: COM VA AFECTAR EL PENSAMENT DEL SEGLE XV X LA SOCIETAT RURAL CATALANA?; Concèdit; 6.000,00 €; 7495 D/480000103/4411/0000; -
+Duran Moreno, Carolina; C: Replantejament d'IMaginaris al voltant del violí tradicional a Catalunya i de la seva funcionalitat dels; Denegat; 0,00 €; -; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+RIERA MORCILLO, LAURA; B: FRANKENSTEIN; Denegat; 6.000,00 €; 7495 D/480000103/4411/0000; -
+Bestué Guarch, David; La Desconstrucció a Catalunya. 1982-1997; Concèdit; 6.000,00 €; 7495 D/480000103/4411/0000; -; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Giménez Carrillo, Glòria; A: La batuca que tenia forma de muntanya; Denegat; 0,00 €; -; -
+marcet rovira; sergi; E: Caga tòxil; Denegat; 0,00 €;
+Gil Tarrida; Joaquim; B: El Foc i la Nata (títol provisional) #2; Concedit; 600,00 €; 7495 D/480000103/4411/0000
+Bros Ardévol; Ona; D: Imaginaris per una reproducció dissident; Concedit; 600,00 €; 7495 D/480000103/4411/0000
+Galante Sánchez; Adriano; B: REPTITE CONTINGUT; Denegat; 0,00 €;
+ruiz colomer; victor; A: Números nel champú (deslizamiento cognitivo); Denegat; 0,00 €;
+Girona Aguilar; Adrià; B: Narratives sonores; Denegat; 0,00 €;
+GATNAU JOANIOU; JOSEP MARIA; D: Art Futurí en l'Art Afér Ámbra: I Artis Alesia, África i del Metavers; Denegat; 0,00 €;
+Kasser; Sophie; B: El Rencé de l’Euga; Denegat; 0,00 €;
+Sans Ramos; Eva; A: ESTÈTIQUES ESTÀTIQUES ESTÒTIQUES de l'art de la performance; Denegat; 0,00 €;
+Margart Sole; Agustí; B: Transhumanic artificial 3.9; Denegat; 0,00 €;
+LLADÓ GAMBIN; MONTSERRAT; C: daughters; Concedit; 600,00 €; 7495 D/480000103/4411/0000
+GUERRERO NIETO; JAVIER; B: Coses pírcs passen als desserts; Concedit; 600,00 €; 7495 D/480000103/4411/0000
+Escartin Pede; Flavia; C: la creació d un quartet de corda dins un duet; Denegat; 0,00 €;
+Darder Marti; Maria; E: El mite de la i rosa lun aparell; Denegat; 0,00 €;
+Rosado Avila; Daniel; B: Verbena Excalibur; Denegat; 0,00 €;
+Villaflina Martínez; Majo; B: Quercus Suber; Denegat; 0,00 €;
+CAMPS FARRAN; JOSEP; A: BROTS TRANSHUMANTS; Concedit; 600,00 €; 7495 D/480000103/4411/0000
+Messeguer Pérez; Bernat; B: Laboratori d'investigació TENET, d' Eunoia Kollektiv; Denegat; 0,00 €;
+Alavedra Cabeza; Anna; B: On és l'Elif? Fabri per sonatge còmic femení i la seva relació amb l'espai públic; Denegat; 0,00 €;
+Ruiz Montessino, Antonio; Temptatives; Concert; 6.000,00 €; 7495 D4800001034411/0000; -
+Murias Suárez, Alberto Jonás; Recerca audiovisual: llenguatge, so i símbol "SWel Part 2 (Unhoarded)"; Concert; 6.000,00 €; 7495 D4800001034411/0000; -
+Aguilera Hermoso, Eladio; A la ciudad de todos los problemas; Denegat; 0,00 €; 7495 D4800001034411/0000; -
+Almirall Rotés, Caterina; Sumari Astral; Concert; 6.000,00 €; 7495 D4800001034411/0000; -
+Sala Aisna, Anna; Cant tradicional pità; s'hi es va aplicatció en el contemporani; Denegat; 0,00 €; 7495 D4800001034411/0000; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Fernández Silva Alonso, Ezequiel; D: Graffiti Barcelona, la evolució de una cultura; Denegat; 6.000,00 €; 7495 D4800001034411/0000; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Tomas Massana, Genís; Contes i llegendes de la Terra; Concert; 0,00 €; 7495 D4800001034411/0000; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Cantero Salazar, Dora; Con mi sombra somos tres; Denegat; 0,00 €; 7495 D4800001034411/0000; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Karagianis, Nathalie; D-Passeuse; Denegat; 6.000,00 €; 7495 D4800001034411/0000; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Gomez Vicente, Sonia; CalliscodipLab; Denegat; 0,00 €; 7495 D4800001034411/0000; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+ALÍAS BORJAS, CELESTINA; Veus Lliures: La improvisació lliure i la conducció en un ensemble vocal.; Denegat; 0,00 €; 7495 D4800001034411/0000; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Calafell Muñoz-Castanyer, Helena; A l'és dotze al pont; Denegat; 6.000,00 €; 7495 D4800001034411/0000; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques.
+Fernández Prat, Marc; Creixent interaccions; Denegat; 0,00 €; 7495 D4800001034411/0000; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Speilman, Sinéad; Coberts de Plata; Denegat; 0,00 €; 7495 D4800001034411/0000; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Vásquez Méndez, Carlos Antonio; CONTRACAMP; Denegat; 0,00 €; 7495 D4800001034411/0000; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Zandon Men, Artur; E: Volta Clàssica; Denegat; 0,00 €; 7495 D4800001034411/0000; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Raventós de Volart, Pilar; L'ESTRET CAMÍ DINS TEU; Concert; 6.000,00 €; 7495 D4800001034411/0000; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Tejero Pereira, Mireia; D: Ciències IRAE; Denegat; 0,00 €; 7495 D4800001034411/0000; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Zapata Abellán, José Alberto; B: Pràctiques sobre una massa celular. Proyecto de investigación sobre el movimiento adaptativo del grupo; Concert; 6.000,00 €; 7495 D4800001034411/0000; -
+Bosch Miralpeix; Anna; El cos invisible; Denegat; 0,00 €;
+Morató Ribera; Víctor; Biblioteca de moviment; denegat; 6.000,00 €; 7495/D/480000103/4411/0000;
+Fontbona Molla; Isabel; Restes d'esplai; denegat; 0,00 €;
+MACIAS; LUIS RAFAEL; TIEMPO ESFERA; denegat; 0,00 €;
+ALBAJAR JORDAN; LAURA; ENCAIXOS; denegat; 0,00 €;
+Montebergo Bolin; Sofía; Volver a la imagen; denegat; 0,00 €;
+Ortiz; Lara; Sobre cobert perquè; denegat; 6.000,00 €; 7495/D/480000103/4411/0000;
+ALONSO MAYORALAS; VIOLETA; A: AGENCIA ACÚSTICA; denegat; 0,00 €;
+Gorositi; Julia; LEYENDAS BASTARDAS; concedit; 6.000,00 €; 7495/D/480000103/4411/0000;
+Muñoz Osorio; Daniel; D: Diciplina; concedit; 6.000,00 €; 7495/D/480000103/4411/0000;
+Solé Andres; Jordi; El dia de la Inundació; denegat; 0,00 €;
+cassabas bover; antoni; Mirades creuades; denegat; 0,00 €;
+Navarro Fronos; Marc; Li-Llegix; denegat; 6.000,00 €; 7495/D/480000103/4411/0000;
+Alonso Diaz; José Ramón; A LES PLENÀRIES I LES TENIS; concedit; 6.000,00 €; 7495/D/480000103/4411/0000;
+PASCUAL GÓMEZ; ALEJANDRO; D: Danz Metro; concedit; 6.000,00 €; 7495/D/480000103/4411/0000;
+Gómez Calvo; Pau; L'Escudellot; denegat; 0,00 €;
+Benitez Blanco; Victoria; A: jardins d'exòtics; concedit; 6.000,00 €; 7495/D/480000103/4411/0000;
+Ancarola Ceràssimo; Nora; CORNET! Un projecte ubícc; denegat; 0,00 €;
+Villaveche Liebman; Emma; Marc teòric de 'sabors i sabers'. Una aproximació contemplativa a la dansa contemporània.; Denegat; 0,00 €; -; -
+Gumà Sumeller, Xavier; Dansa d'Arrencada Catalana i Danses Urbanes: la fusió al territori rural.; Concedit; 6.000,00 €; 7495 D/480000103/4411/0000; -
+Sufer Coma, Jòlia; Aèria; Denegat; 0,00 €; -; -
+batlliga, nicoleta; El paper una investigació de circ contemporani (Tu Se); Denegat; 0,00 €; -; -
+Moreno, Xavier; A: Rumors; Denegat; 0,00 €; -; -
+MORON QUESADA, RAQUEL; A: EL LABERINT DE LES RESSONÀNCIES - WHISPERING HOUSE; Concedit; 6.000,00 €; 7495 D/480000103/4411/0000; -
+Aragay Borras, Josep Maria; D: La política territorial del nostre cos en l'àmbit cultural; Denegat; 6.000,00 €; 7495 D/480000103/4411/0000; -
+Badia Quintana, Marc; A: La voluntat de les ruïnes.; Denegat; 0,00 €; -; -
+antoni conesa, tatiana adelaida; El Poètica; Denegat; 0,00 €; -; -
+Sala Esser, Arnau; A: Hiper-Mediacions: Una praxis pel decreixement.; Concedit; 6.000,00 €; 7495 D/480000103/4411/0000; -
+Palmada Belda, Joaquim; B: A POLS; Denegat; 0,00 €; -; -
+Renon, Marie-Lou; B: Dansa; Denegat; 0,00 €; -; -
+Sánchez Núñez, Pablo; A: Emocions capturades; Denegat; 0,00 €; -; -
+FELIU FABRA, MIREIA; A: Cal Xerta, Rumors de ritus, afectes i paper; Concedit; 6.000,00 €; 7495 D/480000103/4411/0000; -
+Boltran Flores, Éric; A: Emblemàtiques, arbres iconològics i posteriors per una emblematica contemporània; Concedit; 6.000,00 €; 7495 D/480000103/4411/0000; -
+Hurtado Mompé, Xavi; A: arts visuals; Concedit; 6.000,00 €; 7495 D/480000103/4411/0000; -
+Martín Piquer, Vicens; C: Criatures màgiques. Bestiari imaginaris català musical per a Cobla.; Denegat; 0,00 €; -; -
+Rojas Maldonado, Lucia del Pilar; B: Càpsules en Conflicte: Narratives de Resiliència.; Denegat; 0,00 €; -; -
+Truyols Martinez, Cayetano; A: Star_Star_Star: Investigació sobre la imaginació en el àl conceptual i el poliment literari; Denegat; 0,00 €; 7495 D/480000103/4411/0000; Puntació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques.
+Cànovas Torres, Mar; B: Allò que mai compartir; Denegat; 0,00 €; 7495 D/480000103/4411/0000; Puntació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques.
+Roy Deulofeu, Maria; A: UNA PILA DE RUNES; Concedit; 6.000,00 €; 7495 D/480000103/4411/0000; -
+Dallagarrondo, Gonzalez; E: Museo de Ciencias; Denegat; 0,00 €; 7495 D/480000103/4411/0000; Puntació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals.
+Esquí Durrande, Laia; E: ADN - Un joc cooperatiu per a tothom; Concedit; 6.000,00 €; 7495 D/480000103/4411/0000; -
+Morony Salas, José Antonio; A: Fent Terra. El compostatge com a metodologia d'investigació i creació artística; Concedit; 6.000,00 €; 7495 D/480000103/4411/0000; -
+Tolés Rovira, Blanca; B: Dansa; Denegat; 6.000,00 €; 7495 D/480000103/4411/0000; Puntació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques.
+Borràs Montoro, Gerard; A: Video - Cinema; Denegat; 0,00 €; 7495 D/480000103/4411/0000; Puntació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals.
+Avila Rodríguez, Juan Carlos; D: Conjures viscèrals: diàspora, frontera i cos; Denegat; 0,00 €; 7495 D/480000103/4411/0000; -
+Canyet Garcia, Joina; C: Joina - cosnificció reportori del seu tercer treball fonogràfic; Denegat; 0,00 €; 7495 D/480000103/4411/0000; -
+Cortés Soler, Clara; B: Recerca HEDONIA; Concedit; 6.000,00 €; 7495 D/480000103/4411/0000; Puntació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals.
+Balañà, Glòria; B: dones valentes; Concedit; 6.000,00 €; 7495 D/480000103/4411/0000; Puntació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques.
+Saborit Floriach, Arnau; A: Investigació des d'una mirada artística sobre els arbres i arbredes i altres locals centrada a la; Concedit; 6.000,00 €; 7495 D/480000103/4411/0000; Puntació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques.
+Andrade Perez, Ivan; B: Antropocentrisme i Ètnic; Concedit; 6.000,00 €; 7495 D/480000103/4411/0000; -
+Mena Martinez, Marius; E: Joc de taules: Edició d'Esplai; Denegat; 0,00 €; 7495 D/480000103/4411/0000; Puntació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques.
+González de Ubieta Oliveros, Sara; A: Sidrals llos modulars: edició del Jardí d'Racó de les Fibres Vegetals de Mas de Barberans; Denegat; 0,00 €; 7495 D/480000103/4411/0000; Puntació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques.
+Cera Beranda, Joana; A: EL TEATRE HOLOGRAMA; Denegat; 0,00 €; 7495 D/480000103/4411/0000; Puntació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals.
+BARROSO MANCERA, SANDRA; B: SOMUN; Denegat; 0,00 €; 7495 D/480000103/4411/0000; Puntació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques.
+Rossignoli, Milena; Repetir Curvar Coincidir; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals;
+martinez vicente, xavier; arts escèniques; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques;
+canudas faura, jordi; Experimentació Textil per l'Àmbit de la il·luminació; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques;
+Rion Virgili, Núria; A conexió; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals;
+Segarra Rus, Irene; A: Investigació material, Glassbac; Concedit; 600,00 €; 7495 D/4800001034411/0000;
+Aragolns Calabuigd, Pere Joan; C: LA CANYA DEL METAL ALBUM EN CATALA - COMPOSICIÓ I INVESTIGACIÓ MUSICAL; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques;
+Ercoi Valenzuela, Camila; Fotopía - Las magdas de la casa; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals;
+Boté Boik, Jordi; El joc de taula boter; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques;
+Corominas Pérez, Núria; Un xai ha creat el desert; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals;
+Casses Jové, Lluï; E: Creació de jocs de taula originals; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques;
+Klein Torrens, Raquel; El contorno de un paisaje; Denegat; 600,00 €; 7495 D/4800001034411/0000;
+Querol Antich, Núria; D: Comissariat Futurs Possibles; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals;
+Cabral Sousa, Clara; El Vòmit; Denegat; 600,00 €; 7495 D/4800001034411/0000;
+Allué Esteve, Josep Maria; E: LA TRADICIÓ POPULAR JUGADA; Denegat; 600,00 €; 7495 D/4800001034411/0000;
+Saegli Mahik, elie; EL ARQUIVO OCULTO Una investigación que mezcla lo experimental con la metodología para crear un arc; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques;
+Rosi Abellana, Glòria; S: neva, no venim; Concedit; 600,00 €; 7495 D/4800001034411/0000;
+SIMO, RAMON; L'IMPOSSIBLE; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals;
+Lima Russell, Anna Irina; A: Tamar aire; Concedit; 600,00 €; 7495 D/4800001034411/0000;
+Velasco Abra, Jose; D: Mira-nos a la foscor; Denegat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals;
+Uriz Eizalde, Yolanda; A: Identitats Toponímiques, del gràfico topos lugar y osmor; Concedit; 6.000,00 €; 7495 D/480001034411/0000;
+paonessa, diego; A: Esmeler; Denegat; 0,00 €; ;
+Avila Sarmiento, Tania Libertad; A: Escenari; Denegat; 0,00 €; ;
+Vives Llimona, Alex; C: Em de Helena; Denegat; 0,00 €; ;
+Soler Vergés, Maria; E: Jocs de taula comunitaris i urbanisme feminista; Denegat; 0,00 €; ;
+Ordoñez Benages, Cesar; A: Mama; Denegat; 0,00 €; ;
+Jiménez Montagut, Nirvana; A: RES-PIRA; Denegat; 0,00 €; ;
+Pradere, Rémi; C: Rémi Fa Sol a Barcelona; Denegat; 0,00 €; ;
+Congost Feliu, Carles; A: LA CANÇÓ DEL MONSTRE; Concedit; 6.000,00 €; 7495 D/480001034411/0000;
+Galera Vernet, Mónica; A: Fils d'espat; Memòria i genealogia; Denegat; 0,00 €; ;
+Yanes Font, Meritxel; B: DE CAPS; Denegat; 0,00 €; ;
+Bascones Navarro, Pere; D: Art Contemporary, Ecologia o Pràctiques culturals sostenibles; Denegat; 0,00 €; ;
+Hernández Royo, Verónica; B: Pasolodet "Tortosa" (títol provisional); Denegat; 0,00 €; ;
+Armanfar, Pantea; C: So; Denegat; 0,00 €; ;
+Martin Zelich, Vera; D: canteallera; Denegat; 0,00 €; ;
+Franklin, David; A: EKTRKA; Denegat; 0,00 €; ;
+Kraan Basté, Hara; D: Llibre del voluntat del pensament de Manuel Delgado; Denegat; 0,00 €; ;
+Pfeffer Ralter, Luana; B: P.O.L.E.N.T.A - maternitat, capitalism i feminismes) sobre la taula de qui cida; Concedit; 6.000,00 €; 7495 D/480001034411/0000;
+Ramírez Gonzalez, Elena; B: La fantasia de la masculinitat natural; Concedit; 6.000,00 €; 7495 D/480001034411/0000;
+Conesa Rodrigo; Sergi; Jardins amb palmeres; Denegat; 0,00 €;
+Picas Rodorera; Laia; La Donna Lampada; Concedit; 6.000,00 €; 7495 D/480000103/441/1/0000
+Orozco Joan; Ona; Arquitectura viva; Concedit; 6.000,00 €; 7495 D/480000103/441/1/0000
+Sánchez López; Rebeca; E: Vanjiga Extint; Denegat; 0,00 €;
+Garre Roldán; Magdalena; C: Investigació i composició musical; Denegat; 0,00 €;
+García-Masdeu Fernández; Paula; A: Yer ba; Concedit; 600,00 €; 7495 D/480000103/441/1/0000
+Gutiérrez Guardiola; Mario; B: IMPULSLAB; Denegat; 0,00 €;
+parra nahens; yazel; B: jo sóc la xocolata; Denegat; 0,00 €;
+Fauró Sierra; Àlex; B: Herència de riu roig; Denegat; 0,00 €;
+García Membardo; Miquel; A: Su recuerdo nos ayuda a seguir vivos; Concedit; 6.000,00 €; 7495 D/480000103/441/1/0000
+Castañeda Arbaláez; Natalia; A: Nétthou, cartografía de un cuerpo hídrico en retroceso; Concedit; 0,00 €; 7495 D/480000103/441/1/0000
+Jiménez Sánchez; Pol; B: Y, la Copla?; Denegat; 0,00 €;
+Mann, Nathaniel Robin; A: Resonancia Zephyr: Proyecto de Órgano Aéreo; Denegat; 0,00 €;
+Pueyo Solà; Carla; B: Algorismes de resurrecció: rituals per restaurar la vida; Denegat; 0,00 €;
+García Ruiz; María; A: Tretinta i les visites del món Tsukuba (el paisatge i la solitud); Denegat; 0,00 €;
+Eckert; Petra Viktoria; E: Miracle verd; Denegat; 0,00 €;
+García Tomás; Raquel; C: I jo sento nel partir en viatge morie[1]; Concedit; 6.000,00 €; 7495 D/480000103/441/1/0000
+Navarro Alíció; Patricia; B: TAHREEM; Denegat; 0,00 €;
+rovira pilarch; carla; La Sul; Denegat; 0,00 €;
+ADCOCK COLAS; AIDA; REGENERACIÓ DELS ECOSISTEMES URBANS AMB TIPOLOGIA DE CASC ANIT; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals;
+evinson williams; soren; b; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals;
+CHIREGAT COSTA; LUCIANA; B: UN BOSQUE SELVA COMO UNA FRUTA; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals;
+Fontan Alejo; Andrea; E: Desenvolupament i creació d'un serious game procedimental en forma de joc de cartes per a persones; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals;
+Neddermann Vinaixa; Judit; C: Judith Nedermann-Composició del repertori per un treball fotogràfic Euskera-Català; 6.000,00 €; 7495 D/480000103/4411/0000;
+Guillén Casanova; Marc; B: Cult (tallent); 6.000,00 €; 7495 D/480000103/4411/0000;
+Martin Miralles; Isis; B: Atlàntida; 0,00 €; 7495 D/480000103/4411/0000;
+Klenner Rouillez; Mathias Patricio; A: Arquitectura arural de la infraestructura moderna de Catalunya; 6.000,00 €; 7495 D/480000103/4411/0000;
+Sala Coromina; Joan; B: La Pell del Ctenòfor; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals;
+ONA'TE GIL DE BERNABÉ; POL; C: sambach_rimoskarl; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals;
+Altayó Isner; Gerard; C: CONTACT; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals;
+Sorribas Cervantes; Anna; A: 462-V03-24_CLT019 Beques per a la recerca i la innovació en els àmbits de les arts visuals, de fer; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals;
+dezi; cristina; A: Regenerating skins; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals;
+Llopis Planas; Francesca; A: LA PELL ESCUP I ESCAMPA; 6.000,00 €; 7495 D/480000103/4411/0000;
+Fumero Pignat; Lucia Ana; C: FOLKLORE I - II; 6.000,00 €; 7495 D/480000103/4411/0000;
+Ramírez Rivero; David Bruno; B: Reclaiming Skars; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals;
+Mont Leocoo; Enric; C: Cançons per la ressaca emocional; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals;
+Moreno Sierv; Mayte; E: Emocionarium; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques;
+Pascual Vila, Aida;B: Des-ordres;Denegat;0,00 €; ;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Colet, Esmeralda;B: LA INNOCÈNCIA DEL DEVENIR;Denegat;0,00 €; ;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+olive liatre, tiso;B: UNA BRULLA IMPERFECTA_VERONCEDO;Denegat;0,00 €; ;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+CENDOVA SERRA, VERONICA;B: A Post Growth Design - Disseny pel Post creixement;Denegat;0,00 €; ;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+García i Mateu, Adrià;A: Producció del Videojoc-Assaig dins l'àmbit de les arts visuals;Denegat;0,00 €; ;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Lopez Noguer, Alexandre;B: Projecte d'investigació -cincents;Denegat;0,00 €; ;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+González Guevara, Carlos;C: Quan la neu es desafia;Denegat;0,00 €; ;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Figueras Alis, Ramon;C: Concert per a piano i bosses;Denegat;0,00 €; ;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Valverde Poble, Francesc Xavier;B: El cos contingut. Drets sexuals de les dones privades de llibertat a Catalunya;Concedit;6.000,00 €;7495/D480080010034441/1000;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Riera Prunés, Ingrid;B: Burferies;Denegat;0,00 €; ;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Santandreu Jiménez, Alejandro;E: REVERS;Denegat;0,00 €; ;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Civit Koepplin, Helena;A: Aquí teniu una cosa intensa plena de veus;Denegat;0,00 €; ;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Villaplana Casaponsa, Anna;A: Creem imatges per avançar;Denegat;0,00 €; ;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Pelifot Valenti, Montse;B: INFANCIA I ARTS ESCENIQUES;Denegat;0,00 €; ;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Barqué Duran, Albert;A: 'Teatre- o Mindy: Síntesis d'IA, generatives per a la dislèxia cerebral en actuacions en viu';Concedit;6.000,00 €;7495/D480080010034441/1000;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Sricoboli, Ada;E: Imaginar-hi: un joc per explorar el llenguatge fotogràfic a través de la IA;Denegat;0,00 €; ;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Punsola Pujol, Marta;B: Pepa Crire Contemporani - Guillem;Denegat;0,00 €; ;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Martínez Riera, Joan;B: Cosina;Denegat;0,00 €; ;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Tarrats;Elena;B: HORT/GARDEN;Denegat;0,00 €;Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+COLLADO PARREÑO;JOAQUÍN;B: BAILAMOS PARA ESTAR JUNTS;Concedit;6.000,00 €;7495/D4800001034411/0000
+LLOMBART JORBA;JAUME;C: SUITE ORBITAL;Denegat;0,00 €;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Zanzu;Elena;B: Hy-NpO Project;Denegat;6.000,00 €;7495/D4800001034411/0000
+Mulet Molina;Teresa;A: MAR OBERT: TRATO,TRATA,TRÁFICO;Denegat;0,00 €;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Miranda Bossio;Juan Pablo;La casa dels conills;Denegat;0,00 €;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+GUALJORO RUIZ;JUAN MANUEL;B: RECERCA HISTÒRICA DE "CONXIT A LA LLET";Denegat;0,00 €;Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Pérez-Hita Carrasco;Ricardo;D: Hipo Mental 2014-2024, incidències possibles;Denegat;0,00 €;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Araní Ayuso;Albert;C: El hinc de Telengues;Denegat;0,00 €;Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+López Esteve;Oriol;B: Percepció de la memòria: dansa contemporània i escena expandida (2004-2024);Denegat;0,00 €;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Moscoso Cala;Francisco Javier;D: Inadaptació sobre el gènere i la vulnerabilitat en l'àmbit cultural;Denegat;0,00 €;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Rangel Lampe;Diana;A: E: l'efecte del treballador cultural: investigació al voltant de la cura institucional;Concedit;6.000,00 €;7495/D4800001034411/0000
+Sartor;Luca;B: UNKNOWN ARTIST (ARTISTE DESCONOCID);Denegat;0,00 €;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Olivares Serrano;Jordi;D: ESD escenari. Anhels i conflictes als treballs culturals.;Denegat;0,00 €;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+SAUCH RIUS;LLUIS;B: Liminalitats del cos en el Teatre-Visual;Denegat;0,00 €;Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+RAVENTÓS DEL RINCÓN;ALBA;B: MY BODY AS A WOMAN INTHE FUTURE;Denegat;6.000,00 €;7495/D4800001034411/0000
+Cafadícal Garaventa;Roman;A: La frontera més curta del món;Concedit;6.000,00 €;7495/D4800001034411/0000
+Pont Anglada;Bernat;C: I have a crush;Concedit;6.000,00 €;7495/D4800001034411/0000
+Talbo Guzmán;Lucio;D: El autor-ama-cruces entre anarquisme, pedagogia i arte;Denegat;0,00 €;Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Vives Muñoz, Marc; Los Trabajos; Denegat; 0,00 €; 7495 D/480000103/4411/0000; Puntució inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Comenzana Urtizberea, Markel; Plaguicides alimentaris en transició. Disseny previ per un sistema alimentari just i sostenible; Denegat; 0,00 €; 7495 D/480000103/4411/0000; Puntució inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+RENAU, VERA; On som? Hospitalitats i memòria urbana. Una investigació exploratòria històrica sobre patrimoni; Concedit; 6.000,00 €; 7495 D/480000103/4411/0000; -
+Wizenberg, Daniel Enrique; El·ls camins de la desviació; Concedit; 6.000,00 €; 7495 D/480000103/4411/0000; -
+Castillo Salagurides, Mireia; Al BUIT INTERCISTRAL·LI; Concedit; 6.000,00 €; 7495 D/480000103/4411/0000; Puntució inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+CORTES NAVARRO, ANDREA PAZ; Kui Kìm (sàviess ancestral); Denegat; 0,00 €; 7495 D/480000103/4411/0000; Puntució inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Bandera, Belen; Anima Mundi; Concedit; 6.000,00 €; 7495 D/480000103/4411/0000; -
+Muñoz, Matías; PULS·E; Concedit; 6.000,00 €; 7495 D/480000103/4411/0000; Puntució inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Garcia Fernández, Sebastián; Encaixanods; Denegat; 0,00 €; 7495 D/480000103/4411/0000; Puntució inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Armengol Fernández, Josep; "Primers composicions"; Denegat; 0,00 €; 7495 D/480000103/4411/0000; -
+Garcia Casals, Sandra; Llums i ombres; Denegat; 0,00 €; 7495 D/480000103/4411/0000; Puntució inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Martí Puig, Laia; Edició i desenvolpament de llenguatge; Concedit; 6.000,00 €; 7495 D/480000103/4411/0000; -
+Bustamante Rosero, Ana; B: Palenque/ Poblenou; dins un programa de participació jove en la gestió de les arts escèniques; Concedit; 6.000,00 €; 7495 D/480000103/4411/0000; -
+Sesé Lara, Magali; C: Descarada - compilació del repertori tercer treball fonogràfic pop; Concedit; 6.000,00 €; 7495 D/480000103/4411/0000; -
+Muñoz López, Raquel; A: Cossos invisibles. Artistics desplagats; Denegat; 0,00 €; 7495 D/480000103/4411/0000; Puntució inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Chalamanch Amart, Mireia; B: PUNTS CECS; Denegat; 0,00 €; 7495 D/480000103/4411/0000; -
+Garcia Cortizo, Mario; C: Aix marxes; Denegat; 0,00 €; 7495 D/480000103/4411/0000; -
+Hart Villar, Magdalena; B: DANSA; Denegat; 0,00 €; 7495 D/480000103/4411/0000; Puntució inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+quintana caralt; manel; A: L' - Orquestra fenomenal. Sinfonies lumíniques del paisatge; Denejat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+Telesfort, Clémentine; B: REFUGE; Denejat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Ortiz Juan, David; A: Arts visuals; Denejat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Adorni Mindel, Anya; A: Sentits de idees que exploren el subconscient a través d'una perspectiva feminista, con cuentos breves; Denejat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Gomez Bernardez, Diego; A: La revolució vívida de la mar; Denejat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Tenorio Cabrera, Ursula; B: Sobre le pel nuu i l'ocu de plàer; Denejat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Camacho Rico, Sergio; C: L’ATUALITAT ELS RE: Explicació de la improvisació Sonora i el seu impacte en l’Experiència Artística; Denejat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 10.4 de les bases generals
+MESTRE MORENO, AINA; A: Formes de la No-Visió; Concedit; 600,00 €; 7495/D4800001034411/0000
+Satskia, Maria; C: musical Disidència; Denejat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Sueiro Barragáns, Alba Maria; D: Insostenible; Concedit; 600,00 €; 7495/D4800001034411/0000
+Morera Mingueza, Javier; A: L'Hàllet de Bellvige. Un espai d'acció i transformació artística i social al barri de Bellvige; Concedit; 600,00 €; 7495/D4800001034411/0000
+Fernández Camazón, Saioa; B: Entropia; Denejat; 0,00 €; Puntuació inferior a la mínima exigida, d'acord amb el punt 6.2 de les bases específiques
+Sant Funk, Sílvia; B: RANGE LIGHTS; Denejat; 600,00 €; 7495/D4800001034411/0000
