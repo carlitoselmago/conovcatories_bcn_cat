@@ -1,12 +1,17 @@
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from pdf2image import convert_from_path
+import pandas as pd
+import numpy as np
 import torch
 import os
+import re
 
 class Helpers:
 
     def __init__(self):
         print("Started Helper class")
+
+    
 
     def init_genderClass(self):
         model_name = "padmajabfrl/Gender-Classification"
@@ -84,15 +89,20 @@ class Helpers:
             
         return n
 
-    
-     
+    def numeric_sort_key(self,fname):
+        m = re.search(r"page_(\d+)\.png", fname)
+        if m:
+            return int(m.group(1))
+        return 999999  # fallback
+        
 
     def pdf_to_images(self,images_dir,pdf_path):
         print("Checking if pages already converted…")
 
         # Check if any PNG files exist
         existing = sorted(
-            [f for f in os.listdir(images_dir) if f.lower().endswith(".png")]
+            [f for f in os.listdir(images_dir) if f.lower().endswith(".png")],
+            key=self.numeric_sort_key
         )
         if existing:
             print(f"✓ Found {len(existing)} existing PNG pages — skipping conversion.")
@@ -101,6 +111,7 @@ class Helpers:
         print("→ No images found. Converting PDF…")
 
         pages = convert_from_path(pdf_path, dpi=300)
+        #pages = convert_from_path(pdf_path, dpi=400)
         page_images = []
 
         for i, page in enumerate(pages):
@@ -116,11 +127,21 @@ class Helpers:
 
     def extract_text_from_gpt(self,client,messages):
             """Unified way to call GPT and extract only text parts."""
-            response = client.chat.completions.create(
-                model="gpt-4o-mini",
-                messages=messages,
-                max_tokens=4096
-            )
+            model="gpt-5-mini"#"gpt-4o-mini"
+
+            
+            if model=="gpt-5-mini":
+                    response = client.chat.completions.create(
+                    model=model,
+                    messages=messages,
+                    max_completion_tokens=4096
+                )
+            else:
+                response = client.chat.completions.create(
+                    model=model,
+                    messages=messages,
+                    max_tokens=4096
+                )
             msg = response.choices[0].message
 
             if isinstance(msg.content, str):
@@ -223,3 +244,16 @@ class Helpers:
 
         print("⚠ Could not interpret column JSON, raw text:", raw)
         return None
+
+    def is_mostly_numeric(self,s):
+        if pd.isna(s):
+            return False
+        s = str(s).strip()
+
+        # Keep letters: if there is at least 1 letter, it's NOT numeric
+        if re.search(r"[a-zA-Zà-ÿÀ-Ÿ]", s):
+            return False
+        
+        # If removing digits and common separators leaves nothing → numeric-like
+        cleaned = re.sub(r"[0-9\s/.,:-]", "", s)
+        return cleaned == ""

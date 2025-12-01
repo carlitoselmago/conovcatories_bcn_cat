@@ -59,7 +59,7 @@ for root, dirs, files in os.walk("resolucions"):
                 current_annex = None
 
                 for img_path in page_images:
-                    print(f"\n=== Processing {img_path} ===")
+                    print(f"\n=== Processing {img_path} ===",file)
 
                     # Load full page and encode
                     img = cv2.imread(img_path)

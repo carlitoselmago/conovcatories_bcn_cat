@@ -1,6 +1,7 @@
 #py-zerox
 #pymupdf4llm
 markdown-to-json
+psycopg2-binary
 pandas
 transformers 
 torch
