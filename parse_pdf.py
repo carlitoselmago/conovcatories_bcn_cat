@@ -141,3 +141,8 @@ for root, dirs, files in os.walk("resolucions"):
 
 
                 print("\n✓ All annex tables extracted for ",file)
+
+                #rename pdf with _done
+                pdf_path = os.path.join(root, file)
+                done_pdf = pdf_path.replace(".pdf", "_done.pdf")
+                os.rename(pdf_path, done_pdf)
