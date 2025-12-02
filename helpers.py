@@ -152,15 +152,15 @@ class Helpers:
                 if getattr(part, "type", None) == "text"
             )
 
-    def detect_annex_id(self,client,b64_page):
+    def detect_annex_id(self,client,b64_page,prompt):
         """Returns ANNEX number or NONE."""
         text = self.extract_text_from_gpt(client,[
             {
                 "role": "user",
                 "content": [
                     {"type": "text",
-                    "text": "Does this page contain an ANNEX label (e.g., 'ANNEX 1', 'ANNEX 2')? "
-                            "Return ONLY the annex name, or 'NONE' if not found."},
+                    "text": prompt
+                            },
                     {"type": "image_url",
                     "image_url": {"url": f"data:image/png;base64,{b64_page}"}}
                 ]

@@ -18,6 +18,8 @@ inputfolder="resolucions"
 imagefolder="page_images"
 outputfolder="data"
 
+
+
 # Parse all pdfs recursevelly
 for root, dirs, files in os.walk("resolucions"):
     for file in files:
@@ -31,7 +33,12 @@ for root, dirs, files in os.walk("resolucions"):
                 print("Folder:",root,"file:",file)
                 print("")
 
-                
+                prompt="Does this page contain an ANNEX label (e.g., 'ANNEX 1', 'ANNEX 2')?"
+                prompt+="Return ONLY the annex name, or 'NONE' if not found."
+
+                if "moniques" in root:
+                    prompt="Does this page contain an SOL·LICITUDS label (e.g., 'RELACIÓ DE SOL·LICITUDS...')?"
+                    prompt+="Return ONLY the label name, or 'NONE' if not found."
                 
                 images_dir = imagefolder
                 os.makedirs(images_dir, exist_ok=True)
@@ -67,7 +74,7 @@ for root, dirs, files in os.walk("resolucions"):
                     b64_page = base64.b64encode(buffer).decode("utf-8")
 
                     # ---- Detect ANNEX
-                    annex_id = H.detect_annex_id(client,b64_page)
+                    annex_id = H.detect_annex_id(client,b64_page,prompt)
                     if annex_id != "NONE":
                         current_annex = annex_id
                         if annex_id not in annexes:
@@ -98,6 +105,10 @@ for root, dirs, files in os.walk("resolucions"):
                 # SAVE ONE CSV PER ANNEX
 
                 for annex_id, data in annexes.items():
+
+                    #remove possible invalid characters
+                    annex_id = annex_id.replace("/","_")
+
                     base = Path(file).stem
                     # Build new directory by replacing the prefix
                     out_dir = root.replace("resolucions/", "data/")+"/"+base
