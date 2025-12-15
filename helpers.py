@@ -81,6 +81,31 @@ class Helpers:
             return None
     
 
+    def fix_money_value(self,val):
+        if pd.isna(val):
+            return np.nan
+        s = str(val).strip()
+        s = s.replace('"', "").replace("€", "").replace(" ", "")
+        if s == "":
+            return np.nan
+        s = re.sub(r"[^0-9.,]", "", s)
+        if s == "":
+            return np.nan
+        if s.count(".") + s.count(",") > 1:
+            last_sep_pos = max(s.rfind("."), s.rfind(","))
+            digits = re.sub(r"[.,]", "", s)
+            s = digits[:last_sep_pos] + "." + digits[last_sep_pos:]
+        else:
+            if "," in s and "." not in s:
+                s = s.replace(",", ".")
+            elif "." in s and s.count(".") > 1:
+                parts = s.split(".")
+                s = "".join(parts[:-1]) + "." + parts[-1]
+        try:
+            return float(s)
+        except ValueError:
+            return np.nan
+
     def cleanup_punts(self,n):
         if n:
             if n[-1]==",":

@@ -1,26 +1,26 @@
 # conovcatories_bcn_cat
-Codi per la mineria de dades de convocatòries a Barcelona - Catalunya
+Código para la minería de datos de convocatorias en Barcelona - Catalunya
 
-## Fonts de dades
+## Fuentes de datos
 - https://tauler.seu-e.cat/inici
 - https://bop.diba.cat/resultats-cerca?bopb_cerca%5BdataInici%5D=29-08-2025&bopb_cerca%5BdataFinal%5D=29-11-2025&bopb_cerca%5BparaulaClau%5D=barcelona%20crea
 
-## Fonts complementàries
+## Fuentes complementarias
 - https://artfacts.net/
 - https://huggingface.co/padmajabfrl/Gender-Classification
 
-## Convocatòries analitzades
+## Convocatorias analizadas
 - Barcelona Crea (2020-2025)
-- Beques per a la creació artística, la recerca i la innovació en els àmbits de les arts visuals, de les arts escèniques, de la música, del pensament i dels jocs de taula (2019-2025)
-- Subvencions per a projectes artístics de caràcter professional en l’àmbit de les arts visuals (2019-2025)
+- Becas para la creación artística, la investigación y la innovación en los ámbitos de las artes visuales, escénicas, música, pensamiento y juegos de mesa (2019-2025)
+- Subvenciones para proyectos artísticos de carácter profesional en el ámbito de las artes visuales (2019-2025)
 
-A l'espera de completar el llistat amb convocatóries com la de Barcelona Producció (La Capella)
+Pendiente de completar el listado con convocatorias como Barcelona Producció (La Capella)
 
-# Entitats de dades
+# Entidades de datos
 - convocatoria
-- candidat
+- candidato
 
-# Instal·lació
+# Instalación
 ```
 sudo apt install poppler-utils
 sudo apt install firefox-esr
@@ -38,15 +38,22 @@ sudo apt install -y \
     libxrender1 \
     libxext6 \
 
-# Download OCR model from https://huggingface.co/nlpconnect/PubLayNet-faster_rcnn_R_50_FPN_3x/blob/d4cebcc544ac0c9899748e1023e2f3ccda8ca70e/model_final.pth?utm_source=chatgpt.com
+# Descargar el modelo OCR desde: https://huggingface.co/nlpconnect/PubLayNet-faster_rcnn_R_50_FPN_3x/blob/d4cebcc544ac0c9899748e1023e2f3ccda8ca70e/model_final.pth?utm_source=chatgpt.com
 
-# config file : https://www.dropbox.com/s/f3b12qc4hc0yh4m/config.yml?dl=1
+# Archivo de configuración: : https://www.dropbox.com/s/f3b12qc4hc0yh4m/config.yml?dl=1
 
 pip install -r requirements.txt
 
-# Setup the OPENAI key with:
+# Configurar la clave de OPENAI con:
 export OPENAI_API_KEY={yourkey}
 ```
 
-# Comptaibilitat
-Testejat a linux zorin, Python 3.11.10
+# Compatibilidad
+Probado en Linux Zorin, Python 3.11.10
+
+
+# Pasos de procesado
+- Primero he descargado manualmente los pdfs de cada resolución
+- Luego he utilizado OCR para convertir cada tabla a csv con process_pdf.py
+- Luego he limpiado y enriquecido los datos con process_cs.py, los datos pasan entonces a una base de datos local de postgres
+- Para terminar he hecho una revisión manual para clasificar colectivos por su nombre (incluyen la palabra 'cole')
