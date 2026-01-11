@@ -1,3 +1,4 @@
+*.deb
 *.png
 annex_csv/*
 *.pth

@@ -68,6 +68,10 @@ for root, dirs, files in os.walk("data"):
                     grantedstr="Conce"
                     df["score"]=0.0
                     df["category"] = None
+
+                    # fix name order
+                    if year>2019:
+                        df["artistname"]=df["artistname"].apply(H.normalize_name)
                     
                     
                 if entitat=="barcelona_crea":
@@ -83,9 +87,14 @@ for root, dirs, files in os.walk("data"):
                         #if "granted" not in " ".join(df.columns):
                         #    df["granted"]=False
                         #    print(df["granted"])
-                    df["reason"]=df["granted"].astype(str)
+                    try:
+                        df["reason"]=df["granted"].astype(str)
+                    except:
+                        df["granted"]=False
+                        df["reason"]=df["granted"].astype(str)
                     #df["score"]=0.0
-                    
+                    df["artistname"]=df["Nom"]
+                    df["category"]=None
                     grantedstr=["Atorgada","Aprovada"]
 
                 if entitat=="moniques":
@@ -221,29 +230,38 @@ for root, dirs, files in os.walk("data"):
                     
                     artist_id, existed = DB.add_artist(artistname, dni,df.at[index, "iscollective"])
                     print("Artist ID:", artist_id, "Already existed:", existed)
-                
-                    if artistname!="":
-                        r=af.get_artist(artistname)
 
-                        sleep(2)
-                        if r:
-                            dbdata = {
-                            "type": r["type"],
-                            "subtype": r["subtype"],
-                            "media": r["media"],
-                            "movements": r["movements"],
-                            "nationality": r["nationality"],
-                            "birth_year": r["birth_year"],
-                            "rank": r["rank"],
-                            "exhibitions": r["exhibitions"],
-                            "gender": r["gender"]
-                            }
-                        else:
-                            dbdata={
-                                "gender": df.at[index, "gender"],
-                                "gender_score": df.at[index, "gender_score"]
-                            }
-                        DB.update_artist(artist_id, dbdata)
+                    
+                    if not existed:
+
+                        if artistname!="":
+                            r=af.get_artist(artistname)
+                            if r:
+                                if "rank" not in r:
+                                    r["rank"]=None
+                                if "exhibitions" not in r:
+                                    r["exhibitions"]=0
+                                if "gender" not in r:
+                                    r["gender"]=None
+                            sleep(2)
+                            if r:
+                                dbdata = {
+                                "type": r["type"],
+                                "subtype": r["subtype"],
+                                "media": r["media"],
+                                "movements": r["movements"],
+                                "nationality": r["nationality"],
+                                "birth_year": r["birth_year"],
+                                "rank": r["rank"],
+                                "exhibitions": r["exhibitions"],
+                                "gender": r["gender"]
+                                }
+                            else:
+                                dbdata={
+                                    "gender": df.at[index, "gender"],
+                                    "gender_score": df.at[index, "gender_score"]
+                                }
+                            DB.update_artist(artist_id, dbdata)
 
                     # Set artist in the row with it's id
                     df.at[index,"artist"]=artist_id
@@ -313,4 +331,10 @@ for root, dirs, files in os.walk("data"):
                 for i in range(6):
                     os.system( 'echo -e "\007"' )
                     sleep(0.1)
-                sys.exit()
+                
+                print(":::::::::::::::::::::::::::::::::::")
+                print("END processing",file)
+                print(":::::::::::::::::::::::::::::::::::")
+                print()
+                sleep(10)
+                #sys.exit()

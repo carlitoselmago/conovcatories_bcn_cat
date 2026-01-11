@@ -45,6 +45,9 @@ class DB():
             self.pg_conn.rollback()
             return None if fetch else False
 
+    def get_col_names(self):
+        column_names = [desc[0] for desc in self.pg_cursor.description]
+        return column_names
 
     def pg_query(self, sql, params=None):
         """

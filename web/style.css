@@ -1,0 +1,172 @@
+:root {
+--black:#282828;
+}
+
+body {
+ 
+  color: var(--black);
+  font-family: "Google Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "GRAD"0;
+  padding: 20px;
+ /* background-image:url('img/fondo.jpg'); */
+background-attachment: fixed;
+background-size:cover;
+
+background: #e0e0ca;
+background: linear-gradient(0deg,rgba(224, 224, 202, 1) 0%, rgba(240, 240, 228, 1) 16%, rgba(240, 240, 228, 1) 100%);
+padding: 0px;
+    margin: 0px;
+}
+.hero{
+      display: flex;
+    height: 85vh;
+    gap:20px;
+  
+}
+.raya{
+    background: #e0e0ca;
+background: linear-gradient(0deg,rgba(224, 224, 202, 1) 0%, rgba(240, 240, 228, 1) 16%, rgba(240, 240, 228, 1) 100%);
+
+}
+.hero h1{
+  
+    font-size: 6vw;
+    margin-bottom: 2vw;
+    line-height: 100%;
+}
+.hero h1, .hero h3{
+  margin-top: 0px;
+}
+ .hero h3{
+  margin-top: 10px;
+   font-size: 19px;
+ }
+ .hero ul{
+  padding: 0px;
+ }
+ .hero li{
+      list-style: none;
+          margin-bottom: 10px;
+ }
+ .hero li b{
+  font-size: 18px;
+ }
+ .hero .color{
+width: 20px;
+    height: 13px;
+    display: inline-block;
+    margin-right: 5px;
+ }
+
+article .c{
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.filters {
+
+
+        position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.filters select {
+  border:none;
+  background-color: var(--black);
+  color:white;
+    font-family: "Google Sans", sans-serif;
+    font-size: 18px;
+        border-radius: 0px;
+}
+
+.filters select:focus, .filters select:focus{
+    outline: none;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+.graph {
+   border:solid 4px var(--black);
+   
+    position: relative;
+    padding: 29px;
+    padding-left: 0px;
+    max-height: 75vh;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.multicol{
+     display: flex;
+   
+}
+.multicol .graph{
+  width: 33%;
+  padding-bottom: 40px;
+}
+.multicol .graph:first-of-type{
+  border-right:0px;
+}
+.multicol .graph:last-of-type{
+  border-left:0px;
+}
+
+.graph.big canvas{
+ 
+}
+.textcol h1{
+  line-height: 100%;
+}
+
+.graph.medium canvas{
+  min-height: 45vh;
+}
+.graph.small{
+  height: 25vh;
+}
+select {
+
+  padding: 6px;
+}
+
+canvas {
+  max-width: 100%;
+}
+.cols{
+       display: flex;
+    gap: 20px;
+}
+.cols .col:first-of-type{
+  width: 20%;
+}
+.cols .col:last-of-type{
+  width: 80%;
+}
+q{
+    
+       margin-top: -60px;
+    display: block;
+    
+        display: flex;
+        gap:10px;
+}
+q:before{
+  content:"";
+}
+q:after{
+  content:"";
+}
+q h2{
+  margin-bottom: 0px;
+}

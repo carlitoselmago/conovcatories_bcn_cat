@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Convocatorias</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-sankey@0.12.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script src="https://unpkg.com/chroma-js@2.4.2/chroma.min.js"></script>
+</head>
+
+<body>
+
+  <article>
+    <div class="raya">
+      <div class="c ">
+        <div class="hero ">
+          <div>
+            <h1>
+              Distribución y resultados de convocatorias públicas de arte contemporáneo
+            </h1>
+            <h3>Participación, selección y sesgos visibles en tres convocatorias en el área de Barcelona
+            </h3>
+            <small>Carlos Carbonell<br> Fecha de publicación 11-01-2026</small>
+          </div>
+          <div>
+
+            <small>Datos extraidos de las resoluciones de las convocatórias entre los años 2020 y 2025.</small>
+            <ul>
+              <li>
+                <div class="color" style="background-color: #ff6b6b;"></div><b>Beques Barcelona Crea</b>
+              </li>
+
+              <li>
+                <div class="color" style="background-color:#4dabf7;"></div><b>CLT019</b><br>Beques per a la creació
+                artística, la recerca i la innovació en els àmbits de les arts visuals, de les arts escèniques, de la
+                música, del pensament i dels jocs de taula
+              </li>
+              <li>
+                <div class="color" style="background-color:  #51cf66;"></div><b>Convocatòria Les Mòniques</b>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dashboard">
+      <div class="c cols">
+        <div class="col textcol">
+          <h1>Comparativa de propuestas candidatas y ganadoras</h1>
+
+          <p>La evolución del número de propuestas presentadas muestra, en términos generales, una tendencia al alza. Al
+            mismo tiempo, parece observarse un efecto de “rebote”: tras un año con un aumento especialmente alto de
+            candidaturas, suele producirse al año siguiente una reducción en el número de propuestas presentadas.
+          </p>
+
+          <p>
+            No todas las convocatorias ofrecen el mismo ratio de oportunidades. <b>Barcelona Crea</b> presenta una base
+            de participantes significativamente más amplia, llegando a cuadruplicar en algunos años el volumen de
+            candidaturas de otras convocatorias analizadas.
+          </p>
+          <p>
+            En el caso de <b>CLT019</b>, esta menor presión competitiva se traduce en que, en determinados años, la
+            probabilidad de resultar seleccionado alcanza aproximadamente el 50%.
+          </p>
+          <p>
+
+          </p>
+
+
+
+        </div>
+        <div class="col">
+          <div class="graph big">
+
+            <div class="filters">
+              <select id="modeFilter">
+                <option value="mixed">Todas las instituciones</option>
+                <option value="total">Suma total</option>
+              </select>
+            </div>
+
+
+            <canvas id="chart"></canvas>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+      <div class="c cols">
+        <div class="col textcol">
+        </div>
+        <div class="col">
+          <q>
+
+            <p>En el caso de <b>Barcelona Crea</b>, si calculamos la cantidad total de horas dedicadas por todos los
+              participantes no ganadores, partiendo de un promedio estimado de 20 horas de trabajo por proyecto, podemos
+              dimensionar el volumen de trabajo implicado.</p>
+
+            <div>
+              <h2>90.100 horas </h2> Estimación del total de horas de trabajo no remunerado invertidas en la preparación
+              de proyectos
+            </div>
+            <div>
+              <h2>810.900 €</h2>Equivalente económico estimado si ese tiempo se remunerara a razón de 9 € por hora
+              (sueldo mínimo interprofesional).
+            </div>
+
+
+          </q>
+        </div>
+      </div>
+
+      <div class="c cols">
+        <div class="col textcol">
+          <h1>Paridad de género y equidad</h1>
+
+          <p>En primer lugar, se analiza la paridad por resultados, comparando la proporción de hombres y mujeres tanto
+            en las candidaturas como en las selecciones finales. Este enfoque responde a un <b>criterio de
+              suficiencia</b>, según el cual una baja desviación en los resultados puede interpretarse como un indicio
+            de equidad, incluso cuando la participación inicial es desigual.
+
+          <p>Por otro lado, se analiza la equidad por <b>tasa de éxito</b>, calculando la probabilidad de obtener
+            una ayuda en función del número de candidaturas presentadas por cada género, lo que permite observar si
+            hombres y mujeres cuentan con oportunidades similares de ser seleccionados.</p>
+
+          <p>Parece haber una oscilación entre la desviación por género de la gente que se presenta, especialmente los
+            años 2021 y 2024 y 2025. Si analizamos el ratio de propuestas ganadoras por el principio de suficiencia este
+            se encuentra cercano a la paridad</p>
+
+        </div>
+        <div class="col">
+
+
+
+
+
+          <div class="graph medium chartBox chartBox--gender">
+            <div class="filters">
+              <select id="genderMode">
+                <option value="total" selected>Total</option>
+                <option value="mixed">Todas las instituciones</option>
+              </select>
+
+              <select id="genderMetric">
+                <option value="absolute" selected>Paridad por resultados (suficiencia)</option>
+                <option value="fairness">Equidad por tasa de éxito</option>
+              </select>
+            </div>
+            <canvas id="genderChart"></canvas>
+          </div>
+
+          <small><br>
+            La clasificación por género se ha realizado mediante el modelo de clasificación
+            https://huggingface.co/padmajabfrl/Gender-Classification, por lo que los resultados pueden contener errores
+            de asignación.
+            Las candidaturas presentadas por colectivos no han sido incluidas en esta métrica, y existen asimismo
+            algunos casos con datos anónimos o incompletos. Este modelado no contempla identidades de género no
+            binarias,
+            que forman parte activa y relevante del ámbito del arte contemporáneo, por lo que los resultados deben
+            leerse como una aproximación parcial y no exhaustiva.
+          </small>
+
+
+        </div>
+      </div>
+
+      <div class="c">
+
+
+        <h1>Oportunidades según trayectoria artística</h1>
+        <p>
+          En este apartado se analiza la relación entre trayectoria artística y acceso a las ayudas.
+          Para ello, se ha construido un criterio que distingue entre artistas emergentes y artistas con trayectoria a
+          partir de datos extraudis de <b>artfacts.net</b>.
+          Se consideran como artistas con trayectoria aquellas personas que figuran entre el Top 10.000 o Top 100.000
+          del ranking, o que cuentan con cinco o más exposiciones registradas.</p>
+        <p>Este enfoque permite observar si las distintas instituciones <b>tienden a favorecer perfiles consolidados</b>
+          o si, por el contrario,
+          <b>generan oportunidades reales</b> para artistas en fases más tempranas de su carrera.
+        </p>
+
+        <p>De las tres instituciones analizadas, se observa que, con la excepción de <b>Barcelona Crea</b>, el resto
+          llega a valorar hasta en un 20% la trayectoria consolidada de las artistas que reciben las ayudas.</p>
+
+        <div class="multicol">
+
+
+          <div class="graph small chartBox">
+            <h3>Barcelona Crea</h3>
+            <canvas id="known-barcelona"></canvas>
+          </div>
+
+          <div class="graph small chartBox">
+            <h3>CLT019</h3>
+            <canvas id="known-clt019"></canvas>
+          </div>
+
+          <div class="graph small chartBox">
+            <h3>Moniques</h3>
+            <canvas id="known-moniques"></canvas>
+          </div>
+        </div>
+        <small><br>Los datos procedentes de artfacts.net se basan en sistemas de recopilación automatizada (crawling),
+          por lo que pueden presentar ausencias, sesgos o desajustes respecto a la trayectoria real de las artistas.
+          Además, la propia noción de “trayectoria” medida a través de rankings y recuentos de exposiciones es, en sí
+          misma, una métrica discutible y no debe interpretarse como una representación objetiva del valor o relevancia
+          artística.</small>
+      </div>
+
+      <div class="c cols">
+        <div class="col textcol">
+          <h2>Persistence of applicants across consecutive years</h2>
+        </div>
+
+        <div class="col">
+          <div class="graph medium chartBox">
+            <label>
+              Institution:
+              <select id="institutionFilter"></select>
+            </label>
+
+            <div class="chartBox">
+              <canvas id="persistenceChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <script src="js/vista_general.js"></script>
+  <script src="js/gender_deviation.js"></script>
+  <script src="js/known_artists_chart.js"></script>
+  <script src="js/repeaters.js"></script>
+</body>
+
+</html>

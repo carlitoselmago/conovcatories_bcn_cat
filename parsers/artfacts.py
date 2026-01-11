@@ -1,47 +1,74 @@
-from selenium import webdriver
-from selenium.webdriver.firefox.options import Options
-from selenium.webdriver.common.by import By
-import time
-import requests
 import difflib
+
+import undetected_chromedriver as uc
+from selenium_stealth import stealth
+
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException
+import json
 
 class parser():
 
     name = "artfacts"
 
     def __init__(self):
-        options = Options()
-        options.headless = True  # set to False to see the browser
-        self.driver = webdriver.Firefox(options=options)
+        # -------------------------------
+        # Chrome options
+        # -------------------------------
+        options = uc.ChromeOptions()
+        options.headless = False  # MUST be visible (captcha)
 
-    def parseURL(self, url):
-        return self.get_page(url)
+        options.add_argument("--no-sandbox")
+        options.add_argument("--disable-dev-shm-usage")
+        options.add_argument("--disable-gpu")
+        options.add_argument("--disable-software-rasterizer")
+        options.add_argument("--disable-blink-features=AutomationControlled")
+        options.add_argument("--start-maximized")
 
+        user_agent = (
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) "
+            "Chrome/121.0.6167.140 Safari/537.36"
+        )
+        options.add_argument(f"--user-agent={user_agent}")
+
+        self.driver = uc.Chrome(
+            options=options,
+            use_subprocess=False
+        )
+
+        stealth(
+            self.driver,
+            languages=["en-US", "en"],
+            vendor="Google Inc.",
+            platform="Win32",
+            webgl_vendor="Intel Inc.",
+            renderer="Intel Iris OpenGL Engine",
+            fix_hairline=True,
+        )
+
+        self._bootstrap_browser()
+
+    # ---------------------------------------------------------
+    # INITIAL CAPTCHA BOOTSTRAP
+    # ---------------------------------------------------------
+    def _bootstrap_browser(self):
+        self.driver.get("https://artfacts.net")
+        input("If a Cloudflare captcha appears, solve it now, then press ENTER...")
+
+    # ---------------------------------------------------------
+    # SELENIUM REPLACEMENT FOR API SEARCH
+    # ---------------------------------------------------------
     def findArtist(self, name):
-        # Build URL
         query = name.replace(" ", "%20")
-        url = f"https://artfacts.net/api/v0/search?q={query}"
+        url =  f"https://artfacts.net/api/v0/search?q={query}"
 
-        headers = {
-            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64)",
-            "Accept": "application/json, text/plain, */*",
-            "Referer": "https://artfacts.net/",
-        }
-
-        try:
-            r = requests.get(url, headers=headers, timeout=10)
-        except Exception as e:
-            print("⚠ Connection error:", e)
-            return None
-
-        # --- Try to parse JSON safely ---
-        try:
-            data = r.json()
-        except Exception:
-            print("⚠ API returned non-JSON response:")
-            print("Status:", r.status_code)
-            print("Body preview:", r.text[:500])
-            return None
+        self.driver.get(url)
+        
+        pre = self.driver.find_element(By.TAG_NAME, "pre").text
+        data = json.loads(pre)
 
         # If no results
         if data.get("total", 0) == 0:
@@ -77,46 +104,53 @@ class parser():
 
         return best
 
+    # ---------------------------------------------------------
+    # MAIN ENTRY POINT (UNCHANGED LOGIC)
+    # ---------------------------------------------------------
     def get_artist(self, name):
-
-        # 1. Search artist in API
         res = self.findArtist(name)
-        
+
         if not res:
-            print(f"[!] No API match found for: {name}")
+            print(f"[!] No match found for: {name}")
             return None
 
-        # 2. Get URL from the match
         url = self.get_artisturl(res)
         if not url:
-            print(f"[!] Could not build profile URL for: {name}")
-            return res  # return only the API data
+            return res
 
-        # 3. Parse artist page with Selenium
-        artistdetails = self.parseURL(url)
-        
-        if not isinstance(artistdetails, dict):
-            print(f"[!] Could not parse artist page for: {name}")
-            return res  # return API data only
+        if "/ehibition" not in url:
+            artistdetails = self.get_page(url)
+            if isinstance(artistdetails, dict):
+                res.update(artistdetails)
 
-        # 4. Merge API data with parsed details
-        res.update(artistdetails)
+            return res
+        else:
+            return None
 
-        # 5. Return full artist profile
-        return res
-
-
-    def get_artisturl(self,res):
+    # ---------------------------------------------------------
+    # BUILD ARTIST URL (UNCHANGED)
+    # ---------------------------------------------------------
+    def get_artisturl(self, res):
         if res:
-            url="https://artfacts.net"+res["links"]["card"]
-            return url
-
+            return "https://artfacts.net" + res["links"]["card"]
         return None
 
+    # ---------------------------------------------------------
+    # PARSE ARTIST PAGE (UNCHANGED)
+    # ---------------------------------------------------------
     def get_page(self, url):
-
         self.driver.get(url)
-        time.sleep(3)
+        wait = WebDriverWait(self.driver, 30)
+
+        try:
+            wait.until(
+                EC.presence_of_element_located(
+                    (By.CSS_SELECTOR,
+                     "div.app-js-styles-shared-ScrollContainer__ranking")
+                )
+            )
+        except TimeoutException:
+            return None
 
         # --- RANKING ---
         try:
@@ -124,42 +158,37 @@ class parser():
                 By.CSS_SELECTOR,
                 "div.app-js-styles-shared-ScrollContainer__ranking"
             )
-            title = ranking_block.find_element(By.TAG_NAME, "h5").text.strip()
-            a_tag = ranking_block.find_element(By.TAG_NAME, "a")
-            full_text = a_tag.text.strip()
-            scope = a_tag.find_element(By.TAG_NAME, "em").text.strip()
-            rank = full_text.replace(scope, "").strip()
-        except:
+            a = ranking_block.find_element(By.TAG_NAME, "a")
+            scope = a.find_element(By.TAG_NAME, "em").text.strip()
+            rank = a.text.replace(scope, "").strip()
+        except Exception:
             rank = None
             scope = None
 
         # --- EXHIBITIONS ---
         try:
-            exhibitions_block = self.driver.find_element(
+            ex_block = self.driver.find_element(
                 By.CSS_SELECTOR,
                 "div.app-js-styles-shared-ScrollContainer__exhibitions"
             )
-            ex_count = exhibitions_block.find_element(By.TAG_NAME, "a").text.strip()
-        except:
-            ex_count = None
+            exhibitions = ex_block.find_element(
+                By.TAG_NAME, "a"
+            ).text.strip()
+        except Exception:
+            exhibitions = None
 
         # --- GENDER ---
         try:
-            gender_value = self.driver.find_element(
+            gender = self.driver.find_element(
                 By.XPATH,
                 "//tr[td[normalize-space()='Gender']]//a"
             ).text.strip()
-        except:
-            gender_value = None
+        except Exception:
+            gender = None
 
-        # --- SAFELY RETURN ALL FIELDS ---
         return {
             "rank": rank,
             "scope": scope,
-            "exhibitions": ex_count,
-            "gender": gender_value,
+            "exhibitions": exhibitions,
+            "gender": gender,
         }
-
-            
-
- 

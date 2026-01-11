@@ -41,6 +41,25 @@ class Helpers:
                 result[new_index] = values[old_index]
 
         return result
+    
+    def normalize_name(self,s):
+        if not isinstance(s, str):
+            return s
+
+        # Ensure there is a comma
+        if "," not in s:
+            return s.strip()
+
+        left, right = s.split(",", 1)
+
+        # First given name
+        first_name = right.strip().split()[0]
+
+        # First surname ONLY (important)
+        first_surname = left.strip().split()[0]
+
+        return f"{first_name} {first_surname}"
+
 
     def cleanup_number(self,n):
         if n is None:
