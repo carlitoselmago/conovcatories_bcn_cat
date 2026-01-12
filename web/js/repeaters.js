@@ -1,34 +1,69 @@
 (() => {
   const CSV_URL = "data/persistence_by_year_pct.csv";
 
-  let rawData = [];
-  let chart = null;
+  const svg = d3.select("#streamgraph");
+  const container = svg.node().parentNode;
+
+  const margin = { top: 30, right: 20, bottom: 30, left: 50 };
+
+  let width = 0;
+  let height = 0;
+  let innerWidth = 0;
+  let innerHeight = 0;
+
+  const g = svg.append("g");
 
   const COLORS = [
-    "#FFFFA2", // new applicants
-    "#FFB700",
-    "#DD8100",
-    "#DA6900",
-    "#CE0700"
+    "#CFF2E6",
+    "#6FD3B0",
+    "#2FA37A",
+    "#1E7F5D",
+    "#0E4F3A"
   ];
 
-  /* ---------- LOAD DATA ---------- */
+  let rawData = [];
+  let currentInstitution = null;
+
+
+  /* ---------- LOAD CSV ---------- */
 
   function loadCSV() {
     return fetch(CSV_URL)
       .then(r => r.text())
-      .then(text =>
-        new Promise(resolve => {
-          Papa.parse(text, {
-            header: true,
-            dynamicTyping: true,
-            complete: res => resolve(res.data || [])
-          });
-        })
+      .then(
+        text =>
+          new Promise(resolve => {
+            Papa.parse(text, {
+              header: true,
+              dynamicTyping: true,
+              complete: res => resolve(res.data || [])
+            });
+          })
       );
   }
 
   /* ---------- HELPERS ---------- */
+
+  function resize() {
+    const rect = container.getBoundingClientRect();
+
+    width = rect.width;
+    height = rect.height;
+
+    innerWidth = width - margin.left - margin.right;
+    innerHeight = height - margin.top - margin.bottom;
+
+    svg
+      .attr("viewBox", `0 0 ${width} ${height}`)
+      .attr("preserveAspectRatio", "none");
+
+    g.attr("transform", `translate(${margin.left},${margin.top})`);
+
+    if (currentInstitution) {
+      draw(currentInstitution);
+    }
+  }
+
 
   function getInstitutions(data) {
     return [...new Set(data.map(d => d.institution))];
@@ -40,136 +75,136 @@
       .sort((a, b) => a - b);
   }
 
-  function buildDatasets(data, years) {
-    const streaks = [...new Set(data.map(d => d.streak))]
+  function getStreaks(data) {
+    return [...new Set(data.map(d => d.streak))]
       .filter(s => s != null)
       .sort((a, b) => a - b);
-
-    return streaks.map((streak, i) => ({
-      label: streak === 1 ? "New applicants" : `${streak} consecutive years`,
-      data: years.map(year => {
-        const r = data.find(d => d.year === year && d.streak === streak);
-        return r ? r.pct : 0;
-      }),
-      backgroundColor: COLORS[i % COLORS.length],
-      stack: "persistence"
-    }));
   }
 
-  function buildSankeyData(data) {
-  const years = getYears(data);
-  const links = [];
+  /* ---------- BUILD STREAM DATA ---------- */
 
-  for (let i = 0; i < years.length - 1; i++) {
-    const y0 = years[i];
-    const y1 = years[i + 1];
-
-    const current = data.filter(d => d.year === y0);
-    const next = data.filter(d => d.year === y1);
-
-    current.forEach(d => {
-      const from = `${y0} – streak ${d.streak}`;
-
-      const target = next.find(
-        n => n.streak === d.streak + 1
-      );
-
-      if (!target) return;
-
-      const to = `${y1} – streak ${target.streak}`;
-
-      links.push({
-        from,
-        to,
-        flow: d.pct
-      });
-    });
-  }
-
-  return links;
-}
-
-
-  /* ---------- CHART ---------- */
-
-  function createChart(data) {
+  function buildStreamData(data) {
     const years = getYears(data);
-    const datasets = buildDatasets(data, years);
+    const streaks = getStreaks(data);
 
-    const ctx = document.getElementById("persistenceChart");
-    if (!ctx) {
-      console.warn("[persistence_chart] canvas #persistenceChart not found");
-      return;
-    }
-
-    chart = new Chart(ctx, {
-      type: "bar",
-      data: {
-        labels: years,
-        datasets
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          tooltip: {
-            callbacks: {
-              label(ctx) {
-                return `${ctx.dataset.label}: ${ctx.raw.toFixed(1)}%`;
-              }
-            }
-          },
-          legend: {
-            position: "right"
-          }
-        },
-        scales: {
-          x: {
-            stacked: true,
-            ticks: { color: "#aaa" }
-          },
-          y: {
-            stacked: true,
-            max: 100,
-            ticks: {
-              color: "#aaa",
-              callback: v => v + "%"
-            },
-            title: {
-              display: true,
-              text: "Share of applicants (%)"
-            }
-          }
-        }
-      }
+    return years.map(year => {
+      const row = { year };
+      streaks.forEach(streak => {
+        const r = data.find(
+          d => d.year === year && d.streak === streak
+        );
+        row[`streak_${streak}`] = r ? r.pct : 0;
+      });
+      return row;
     });
   }
 
-  function updateChart(institution) {
-    if (!chart) return;
+  /* ---------- DRAW ---------- */
 
-    const filtered = rawData.filter(d => d.institution === institution);
+  function draw(institution) {
+    g.selectAll("*").remove();
+
+    const filtered = rawData.filter(
+      d => d.institution === institution
+    );
+
     const years = getYears(filtered);
+    const streaks = getStreaks(filtered);
+    const data = buildStreamData(filtered);
 
-    chart.data.labels = years;
-    chart.data.datasets = buildDatasets(filtered, years);
-    chart.update();
+    const keys = streaks.map(s => `streak_${s}`);
+
+    const stack = d3
+      .stack()
+      .keys(keys)
+  .offset(d3.stackOffsetNone)
+
+    const series = stack(data);
+
+    const x = d3
+      .scaleLinear()
+      .domain(d3.extent(years))
+      .range([0, innerWidth]);
+const xGrid = d3
+  .axisBottom(x)
+  .ticks(years.length)
+  .tickSize(-innerHeight)
+  .tickFormat("");
+    const y = d3
+      .scaleLinear()
+      .domain([
+        d3.min(series, s => d3.min(s, d => d[0])),
+        d3.max(series, s => d3.max(s, d => d[1]))
+      ])
+      .range([innerHeight, 0]);
+
+    const color = d3
+      .scaleOrdinal()
+      .domain(keys)
+      .range(COLORS);
+
+    const area = d3
+      .area()
+      .x(d => x(d.data.year))
+      .y0(d => y(d[0]))
+      .y1(d => y(d[1]))
+      .curve(d3.curveCatmullRom.alpha(0.5));
+
+    g.selectAll("path")
+      .data(series)
+      .join("path")
+      .attr("d", area)
+      .attr("fill", d => color(d.key))
+      .attr("opacity", 0.9);
+
+    /* ---------- AXES ---------- */
+g.append("g")
+  .attr("class", "x-grid")
+  .attr("transform", `translate(0,${innerHeight})`)
+  .call(xGrid)
+  .call(g =>
+    g.selectAll("line")
+      .attr("stroke", "#000")
+      .attr("stroke-opacity", 0.2)
+      .attr("stroke-dasharray", "2,4")
+  )
+  .call(g => g.select(".domain").remove());
+    g.append("g")
+      .attr("transform", `translate(0,${innerHeight})`)
+      .call(
+        d3
+          .axisBottom(x)
+          .ticks(years.length)
+          .tickFormat(d3.format("d"))
+      );
+g.append("text")
+  .attr("class", "y-label")
+  .attr("transform", "rotate(-90)")
+  .attr("x", -innerHeight / 2)
+  .attr("y", -margin.left-6 + 15)
+  .attr("text-anchor", "middle")
+  .attr("fill", "#444")
+  .style("font-size", "12px")
+  .text("Porcentaje de participantes");
+  
+    g.append("g")
+      .call(d3.axisLeft(y).ticks(5).tickFormat(d => `${d}%`));
   }
+
 
   /* ---------- INIT ---------- */
 
   async function init() {
     rawData = (await loadCSV()).filter(
-      d => d.year != null && d.institution != null
+      d =>
+        d.year != null &&
+        d.institution != null &&
+        d.streak != null
     );
 
     const select = document.getElementById("institutionFilter");
-    if (!select) {
-      console.warn("[persistence_chart] select #institutionFilter not found");
-      return;
-    }
-
     const institutions = getInstitutions(rawData);
+
     institutions.forEach(inst => {
       const opt = document.createElement("option");
       opt.value = inst;
@@ -177,21 +212,24 @@
       select.appendChild(opt);
     });
 
-    const initial = institutions.includes("Total")
+    currentInstitution = institutions.includes("Total")
       ? "Total"
       : institutions[0];
 
-    select.value = initial;
-    createChart(rawData.filter(d => d.institution === initial));
+    select.value = currentInstitution;
+
+    resize();               // 👈 first layout
+    draw(currentInstitution);
 
     select.addEventListener("change", e => {
-      updateChart(e.target.value);
+      currentInstitution = e.target.value;
+      draw(currentInstitution);
     });
+
+    window.addEventListener("resize", resize);
   }
 
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init);
-  } else {
-    init();
-  }
+  init();
 })();
+
+

@@ -128,7 +128,7 @@ function createChart(inst, rows) {
           ticks: { callback: v => v + "%" },
           title: {
             display: true,
-            text: "Share of winners (%)"
+            text: "Porcentaje de ganadores (%)"
           }
         }
       }

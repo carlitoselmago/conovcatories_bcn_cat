@@ -256,7 +256,7 @@ options: {
       displayColors: false,
       callbacks: {
         title(items) {
-          return `Year ${items[0].label}`;
+          return `Año ${items[0].label}`;
         }
       }
     }

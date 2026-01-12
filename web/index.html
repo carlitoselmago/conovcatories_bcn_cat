@@ -11,7 +11,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-sankey@0.12.0"></script>
+<script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
   <script src="https://unpkg.com/chroma-js@2.4.2/chroma.min.js"></script>
 </head>
@@ -221,18 +221,32 @@
 
       <div class="c cols">
         <div class="col textcol">
-          <h2>Persistence of applicants across consecutive years</h2>
+         <h1>Persistencia de las candidaturas a lo largo de los años</h1>
+
+<p>
+Este gráfico muestra el porcentaje de candidaturas acumuladas que se presentan de forma consecutiva en distintos años. 
+Los colores más oscuros indican a las personas que llevan más tiempo presentándose de manera continuada, 
+mientras que el tono más claro corresponde a quienes se presentan un solo año y no repiten al siguiente.
+</p>
+
+<p>
+En el conjunto de datos se observa que en 2024 se acumula en torno a un 20% de candidaturas recurrentes. 
+En el caso de <b>Barcelona Crea</b>, tras el fuerte incremento de participación en 2023, compuesto mayoritariamente por nuevas propuestas,
+ aproximadamente un 25% de las candidaturas del año siguiente corresponde a artistas que ya se habían presentado en años anteriores.
+</p>
         </div>
 
         <div class="col">
-          <div class="graph medium chartBox">
-            <label>
-              Institution:
-              <select id="institutionFilter"></select>
-            </label>
+          <div class="graph chartBox">
+
+   <div class="filters">
+            <select id="institutionFilter"></select>
+            </div>
+<svg id="streamgraph" height="400px"></svg>
+
 
             <div class="chartBox">
-              <canvas id="persistenceChart"></canvas>
+            
             </div>
           </div>
         </div>

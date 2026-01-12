@@ -211,7 +211,7 @@ function createChart(years) {
       scales: {
         y: {
           beginAtZero: true,
-          title: { display: true, text: "Participants" }
+          title: { display: true, text: "Participantes" }
         }
       }
     },
